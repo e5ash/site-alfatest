@@ -28,7 +28,9 @@ $(document).ready(function($) {
 	$('.contacts__map frame').contents().find('.leaflet-popup').hide();
 
 
-
+	$('.expert__list').slick({
+		slidesToShow: 2
+	});
 
 	var popupCouresDesc = $('#popup-coures .popup__desc'),
 		popupCouresInput = $('#popup-coures .input_hidden');

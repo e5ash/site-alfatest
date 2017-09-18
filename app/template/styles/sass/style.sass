@@ -157,6 +157,9 @@ a
 			&-mail-gray
 				top: 23px
 				right: 18px
+			&-group
+				top: 17px
+				right: 20px
 		&_name
 			width: 100%
 		&_phone
@@ -527,6 +530,7 @@ a
 
 .arrows
 	.slick-arrow
+		z-index: 99
 		width: 35px
 		height: 35px
 		border: 1px solid #525252
@@ -1152,6 +1156,19 @@ a
 				line-height: 30px
 				margin-left: auto
 				margin-right: auto
+	&_soyt
+		.slide
+			&__title
+				margin-bottom: 29px
+			&__text
+				max-width: 740px
+				margin-left: auto
+				margin-right: auto
+			&__wrap
+				padding-top: 110px
+			&__button
+				width: 246px
+
 	&__img
 		overflow: hidden
 		img
@@ -1488,7 +1505,23 @@ a
 		font-size: 12px
 		text-align: center
 
-
+.li
+	li
+		position: relative
+		display: block
+		padding-left: 18px
+		text-transform: uppercase
+		font-size: 12px
+		font-weight: 700
+		margin-bottom: 23px
+		&:last-of-type
+			margin-bottom: 0
+		&:before
+			position: absolute
+			content: ''
+			left: 0
+			top: 4px
+			@include sprite($li)
 
 
 
@@ -1502,11 +1535,281 @@ a
 		width: 1030px
 		margin-left: auto
 		margin-right: auto
+	&_soyt
+		max-width: 1000px
+		margin-left: auto
+		margin-right: auto
+		.text
+			
+			&__title
+				margin-bottom: 20px
+				color: #242630
+		color: #959699
+		text-align: center
+		p
+			margin-bottom: 20px
+			font-weight: 700
+			font-size: 14px
+			line-height: 24px
+			&:last-of-type
+				margin-bottom: 0
+	&__table
+		margin-top: 30px
+		padding-left: 120px
+		.col
+			&:nth-of-type(3)
+				padding-left: 40px
+			
+
+
+
+.conduct
+	padding-top: 45px
+	padding-bottom: 50px
+	background-color: #1f2022
+	color: white
+	&__title
+		opacity: .8
+		margin-bottom: 40px
+	&__mail
+		width: 472px
+		padding-left: 30px
+	&__img
+		margin-bottom: 25px
+	&__content
+		width: 600px
+		margin-left: 70px
+	&__subtitle
+		opacity: .8
+		margin-top: -9px
+		font-size: 24px
+		font-weight: 700
+		margin-bottom: 19px
+	&__icons
+		margin-bottom: 75px
+	&__icon
+		text-align: center
+		text-transform: uppercase
+		p
+			margin-top: 16px
+			line-height: 20px
+			font-weight: 700
+	.question-block
+		color: #ffffff
+		opacity: .8
+		a
+			color: #ffffff
+	&__form
+		font-size: 0
+		&-desc
+			font-size: 14px
+			text-align: center
+			opacity: .6
+			margin-bottom: 12px
+	.input-wrap
+		&_email
+			width: 100%
+		&_phone
+			width: 235px
+			margin-right: 10px
+		&_name
+			width: 355px
+
+	.policy
+		font-size: 14px
+
+
+
+.expert
+	padding-top: 44px
+	padding-bottom: 45px
+	&__title
+		margin-bottom: 20px
+	&__desc
+		max-width: 805px
+		margin-left: auto
+		margin-right: auto
+		font-size: 14px
+		line-height: 24px
+		text-align: center
+		font-weight: 700
+		color: #959699
+		margin-bottom: 20px
+	&__item
+		padding-top: 5px
+		padding-bottom: 5px
+	&__img
+		img
+			box-shadow: 0 8px 14px 4px rgba(0, 0, 0, 0.47)
+			margin-left: auto
+			margin-right: auto
+	&__subtitle
+		font-size: 18px
+		margin-top: 20px
+		margin-bottom: 13px
+		text-align: center
+		font-weight: 700
+	&__text
+		font-size: 11px
+		width: 405px
+		margin-left: auto
+		margin-right: auto
+		text-align: center
+		color: #959699
+		line-height: 15px
+		position: relative
+		&:before, &:after
+			display: inline-block
+			content: ''
+			position: relative
+		&:before
+			top: -3px
+			margin-right: 5px
+			@include sprite($quote-before)
+		&:after
+			top: 5px
+			margin-left: 5px
+			@include sprite($quote-after)
+	.slick-arrow
+		top: 37%
 
 
 
 
 
+
+
+.soyt-form
+	padding-top: 52px
+	padding-bottom: 52px
+	background-color: #a4a4a4
+
+	&__content
+		width: 490px
+		padding-top: 50px
+	&__title
+		text-align: left
+		margin-bottom: 20px
+	&__desc
+		font-size: 18px
+		font-weight: 700
+		margin-bottom: 50px
+	&__form
+		width: 670px
+		background-color: #e9e9ea
+		border-radius: 5px
+		padding: 51px 30px 45px
+		margin-left: 10px
+		.input-wrap_places
+			width: 356px
+	&__button
+		line-height: 61px
+		font-size: 24px
+		margin-bottom: 14px
+
+.policy
+	text-align: center
+	line-height: 24px
+	a
+		color: #f5c12f
+		border-color: #f5c12f
+		font-weight: 700
+		text-transform: uppercase
+		&:hover
+			border-color: transparent
+
+
+
+
+
+
+.question-block
+	color: #3a3b45
+	font-size: 24px
+	font-weight: 700
+	text-transform: uppercase
+	a
+		color: #3a3b45
+		font-size: 42px
+		font-weight: 400
+
+
+
+
+.docs
+	padding-top: 44px
+	padding-bottom: 14px
+	&__title
+		margin-bottom: 20px
+	&__list
+		text-align: center
+	&__item
+		margin-bottom: 38px
+	&__text
+		text-align: center
+		font-size: 18px
+		font-weight: 700
+		max-width: 250px
+		margin-left: auto
+		margin-right: auto
+		margin-top: -10px
+
+
+
+.answers
+	color: white
+	background-color: #1f2022
+	padding-top: 44px
+	padding-bottom: 42px
+	&__title
+		opacity: .8
+		margin-bottom: 35px
+	&__list
+		margin-bottom: 55px
+	&__item
+		margin-bottom: 14px
+		font-size: 0
+		&:last-of-type
+			margin-bottom: 0
+		span
+			display: inline-block
+			vertical-align: middle
+			width: 25px
+			height: 25px
+			line-height: 22px
+			text-align: center
+			border: 2px solid #f5c12f
+			font-size: 16px
+			font-weight: 700
+			color: #f5c12f
+			border-radius: 50%
+			margin-right: 8px
+		p
+			font-size: 12px
+			font-weight: 700
+			text-transform: uppercase
+			display: inline-block
+			vertical-align: middle
+	&__form
+		width: 400px
+		padding-top: 39px
+		margin-left: 120px
+		&-title
+			opacity: 0.8
+			text-align: center
+			font-size: 18px
+			font-weight: 700
+			margin-bottom: 16px
+	&__input
+		margin-bottom: 12px
+	.question-block
+		color: #d2d2d2
+		a
+			color: #d2d2d2 
+	.policy
+		margin-top: 5px
+		font-size: 12px
+		line-height: normal
 
 
 
