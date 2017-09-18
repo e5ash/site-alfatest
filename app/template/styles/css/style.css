@@ -503,6 +503,8 @@ a {
     text-transform: uppercase;
     -webkit-border-radius: 3px;
             border-radius: 3px; }
+    .button_yellow:hover {
+      background: #ce9a0a; }
   .button_block {
     width: 100%; }
   .button_minni {

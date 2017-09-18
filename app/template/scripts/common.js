@@ -36,6 +36,8 @@ $(document).ready(function($) {
 	$('select').styler();
 
 
+	$(".input_phone").mask("+7 (999) 999-99-99");
+
 	var popupCouresDesc = $('#popup-coures .popup__desc'),
 		popupCouresInput = $('#popup-coures .input_hidden');
 	$('.programs__item').click(function(event) {
