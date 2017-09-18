@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+
+	<!-- Meta -->
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="template/styles/css/style.css" />
+	<link rel="stylesheet" href="template/styles/css/responsive.css" />
+
+	<!-- Scripts -->
+	<script src="template/scripts/libs.js"></script>
+	<script src="template/scripts/common.js"></script>
+
+	<!--[if lt IE 9]>
+			<script>
+				document.createElement('header');
+				document.createElement('nav');
+				document.createElement('main');
+				document.createElement('section');
+				document.createElement('article');
+				document.createElement('aside');
+				document.createElement('footer');
+			</script>
+	<![endif]-->
+</head>
+<body>
+	<div class="popup" id="popup-callback">
+		<div class="popup__head">
+			<div class="popup__icon icon-black"><i class="icon icon-smartphone"></i></div>
+			<div class="popup__text">
+				<div class="popup__title">закажите звонок</div>
+				<div class="popup__desc">Закажите звонок и получите ответы на все вопросы</div>
+			</div>
+		</div>
+		<div class="popup__body">
+			<input type="text" class="popup__input input input_black" placeholder="Имя">
+			<input type="text" class="popup__input input input_black input_phone" placeholder="Телефон">
+			<button class="popup__button button button_yellow button_block button_35">заказать звонок</button>
+			<div class="popup__link"><a href="/policy/">Политика конфиденциальности</a></div>
+		</div>
+	</div>
+	<header class="header">
+		<div class="container row">
+			<div class="header__logo col"><a href="/"><img src="upload/logo.png" alt=""></a></div>
+			<div class="header__address col"><div class="icon-white"><i class="icon icon-home"></i></div><p>г. Москва, ул.Пушкина д.1</p></div>
+			<div class="header__phones col"><div class="icon-white"><i class="icon icon-call"></i></div><p><a href="">+88015 1457 5879</a><a href="">+88015 1457 5879</a></p></div>
+			<a data-fancybox data-src="#popup-callback" href="javascript:;" class="header__button button button_yellow button_minni button_28 col">заказать звонок</a>
+		</div>
+	</header>
+	<nav class="nav">
+		<div class="nav__visible">
+			<div class="container">
+				<ul>
+					<li><a href="#">услуги</a></li>
+					<li><a href="">обучение</a></li>
+					<li><a href="">медицина</a></li>
+					<li><a href="">сертификация</a></li>
+					<li><a href="">партнеры</a></li>
+					<li><a href="">о компании</a></li>
+					<li><a href="">контакты</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="nav__hidden">
+			<div class="container clearfix">
+				<ul>
+					<li><a href="">СОУТ</a></li>
+					<li><a href="">ЧАССП	</a></li>
+					<li><a href="">Производственный контроль</a></li>
+				</ul>
+				<ul>
+					<li><a href="">Паспорт антитеррора</a></li>
+					<li><a href="">Аудит охраны труда</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<main class="main">
+		<div class="slide banner_edu">
+			<div class="slide__img"><img src="upload/slides/writes.png" alt=""></div>
+			<div class="slide__wrap">
+				<div class="container">
+					<div class="slide__title">Учебный центр «Альфатест»</div>
+					<div class="slide__text">
+						<p>Более 670 программ обучения.</p>
+						<p>Длительность программ обучения от 4 до 256 часов.</p>
+						<p>Лицензия на право оказывать образовательные услуги.</p>
+					</div>
+					<div class="slide__desc">Оставьте заявку и получите полный список курсов с ценами. </div>
+					<div class="slide__button button button button_yellow">получить список курсов</div>
+					<div class="slide__link">Или <a href="">выберите</a> нужный вам курс самостоятельно</div>
+				</div>
+			</div>
+		</div>
+		<div class="services-filter">
+			<div class="container">
+				<div class="services-filter__nav">
+					<ul>
+						<li data-filter-nav="all" class="selected">все программы</li>
+						<li data-filter-nav="popular">популярные</li>
+						<li data-filter-nav="pro">профессиональная переподготовка</li>
+						<li data-filter-nav="should">должны быть на каждом предприятии</li>
+					</ul>
+				</div>
+				<div class="services-filter__list row">
+					<div class="services-filter__item col filter-all">
+						<div class="services-filter__img"><img src="upload/images/1.png" alt=""></div>
+						<div class="services-filter__title">Обучение по охране труда</div>
+						<div class="services-filter__button button button_yellow">перейти</div>
+					</div>
+					<div class="services-filter__item col filter-all">
+						<div class="services-filter__img"><img src="upload/images/2.png" alt=""></div>
+						<div class="services-filter__title">Бактериология</div>
+						<div class="services-filter__button button button_yellow">перейти</div>
+					</div>
+					<div class="services-filter__item services-filter__item_fixed col filter-all">
+						<div class="services-filter__img"><img src="upload/images/3.png" alt=""></div>
+						<div class="services-filter__title">оказание первой помощи</div>
+						<div class="services-filter__button button button_yellow">перейти</div>
+					</div>
+					<div class="services-filter__item services-filter__item_fixed col filter-all">
+						<div class="services-filter__img"><img src="upload/images/4.png" alt=""></div>
+						<div class="services-filter__title">строительные работы</div>
+						<div class="services-filter__button button button_yellow">перейти</div>
+					</div>
+					<div class="services-filter__item services-filter__item_fixed col filter-all">
+						<div class="services-filter__img"><img src="upload/images/5.png" alt=""></div>
+						<div class="services-filter__title">Пожарная безопасность</div>
+						<div class="services-filter__button button button_yellow">перейти</div>
+					</div>
+					<div class="services-filter__item col filter-all">
+						<div class="services-filter__img"><img src="upload/images/1.png" alt=""></div>
+						<div class="services-filter__title">Обучение по охране труда</div>
+						<div class="services-filter__button button button_yellow">перейти</div>
+					</div>
+					<div class="services-filter__item col filter-all">
+						<div class="services-filter__img"><img src="upload/images/2.png" alt=""></div>
+						<div class="services-filter__title">Бактериология</div>
+						<div class="services-filter__button button button_yellow">перейти</div>
+					</div>
+					<div class="services-filter__item services-filter__item_fixed col filter-all">
+						<div class="services-filter__img"><img src="upload/images/3.png" alt=""></div>
+						<div class="services-filter__title">оказание первой помощи</div>
+						<div class="services-filter__button button button_yellow">перейти</div>
+					</div>
+					<div class="services-filter__item services-filter__item_fixed col filter-all">
+						<div class="services-filter__img"><img src="upload/images/4.png" alt=""></div>
+						<div class="services-filter__title">строительные работы</div>
+						<div class="services-filter__button button button_yellow">перейти</div>
+					</div>
+					<div class="services-filter__item services-filter__item_fixed col filter-all">
+						<div class="services-filter__img"><img src="upload/images/5.png" alt=""></div>
+						<div class="services-filter__title">Пожарная безопасность</div>
+						<div class="services-filter__button button button_yellow">перейти</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="advantages advantages_list border-top border-bottom">
+			<div class="container">
+				<div class="advantages__title title"><span class="c-yellow">Альфатест</span> – ваш надежный партнер по всем видам обучения для вашей организации. Работаем с 2011 года.</div>
+				<div class="advantages__list row">
+					<div>
+						<div class="advantages__col col">
+							<div class="advantages__item">
+								<div class="advantages__img"><img src="upload/about/1.png" alt=""></div>
+								<div class="advantages__subtitle">Более 670 программ обучения</div>
+								<div class="advantages__text">У нас вы найдете необходимую для вашей организации программу обучения или профессиональной переподготовки.</div>
+							</div>
+						</div>
+						<div class="advantages__col col">
+							<div class="advantages__item">
+								<div class="advantages__img"><img src="upload/about/2.png" alt=""></div>
+								<div class="advantages__subtitle">Без отрыва от рабочего процесса</div>
+								<div class="advantages__text">В нашем учебном центре у вас есть возможность прохождения обучения без отрыва от рабочего процесса, что очень выгодно в современных условиях</div>
+							</div>
+						</div>
+						<div class="advantages__col col">
+							<div class="advantages__item">
+								<div class="advantages__img"><img src="upload/about/3.png" alt=""></div>
+								<div class="advantages__subtitle">Работаем с 2011 года</div>
+								<div class="advantages__text">Наш учебный центр работает с 2011 года. За это время мы получили колоссальный опыт и делимся им с вами.</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="advantages__col col">
+							<div class="advantages__item">
+								<div class="advantages__img"><img src="upload/about/4.png" alt=""></div>
+								<div class="advantages__subtitle">Лицензированный учебный центр</div>
+								<div class="advantages__text">Наш учебный центр имеет необходимую лицензию, разрешающую нам оказывать образовательные услуги. </div>
+							</div>
+						</div>
+						<div class="advantages__col col">
+							<div class="advantages__item">
+								<div class="advantages__img"><img src="upload/about/5.png" alt=""></div>
+								<div class="advantages__subtitle">Выдаем удостоверения</div>
+								<div class="advantages__text">После прохождения вы получаете соответствующее удостоверение, подтверждающее проверку знаний.</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="advantages__col col">
+							<div class="advantages__item">
+								<div class="advantages__img"><img src="upload/about/6.png" alt=""></div>
+								<div class="advantages__subtitle">В строгом соответствии с законодательством</div>
+								<div class="advantages__text">Все необходимые программы обучения являются обязательными по закону. Наши программы соответствуют требованиям закона. После прохождения обучения вы будете защищены от штрафов.</div>
+							</div>
+						</div>
+						<div class="advantages__col col">
+							<div class="advantages__item">
+								<div class="advantages__img"><img src="upload/about/7.png" alt=""></div>
+								<div class="advantages__subtitle">Крупнейший образовательный центр в Ставропольском крае</div>
+								<div class="advantages__text">Наш образовательный центр является одним из крупнейших центров в Ставропольском крае, с официальным представительством. Приходите к нам в офис, и лично познакомьтесь с нами.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="lic">
+			<div class="container">
+				<div class="lic__title title">лицензия на предоставление образовательных услуг</div>
+				<div class="lic__list row">
+					<div class="lic__item col"><img src="upload/lic/1.png" alt=""></div>
+					<div class="lic__item col"><img src="upload/lic/2.png" alt=""></div>
+				</div>
+				<div class="lic__title lic__title_bottom title">Лицензия 78Л02 №0000087</div>
+			</div>
+		</div>
+		<div class="clients">
+			<div class="container">
+				<div class="clients__title title">НАМ УЖЕ ДОВЕРИЛИ ОБУЧЕНИЕ СОТРУДНИКОВ <span>300+ КОМПАНИЙ СТАВРОПОЛЬСКОГО КРАЯ</span></div>
+				<div class="clients__list row">
+					<div class="clients__item col"><img src="upload/clients/1.png" alt=""></div>
+					<div class="clients__item col"><img src="upload/clients/2.png" alt=""></div>
+					<div class="clients__item col"><img src="upload/clients/3.png" alt=""></div>
+					<div class="clients__item col"><img src="upload/clients/4.png" alt=""></div>
+					<div class="clients__item col"><img src="upload/clients/5.png" alt=""></div>
+					<div class="clients__item col"><img src="upload/clients/1.png" alt=""></div>
+					<div class="clients__item col"><img src="upload/clients/2.png" alt=""></div>
+					<div class="clients__item col"><img src="upload/clients/3.png" alt=""></div>
+					<div class="clients__item col"><img src="upload/clients/4.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+		<div class="consultation">
+			<div class="container">
+				<div class="consultation__wrap">
+					<div class="consultation__title">НЕТ ВРЕМЕНИ ЧИТАТЬ И ВЫБИРАТЬ? ОСТАВЬТЕ ЗАЯВКУ, И МЫ ПОМОЖЕМ</div>
+					<div class="consultation__form">
+						<div class="consultation__form-title">Наши консультанты сориентируют вас и помогут с выбором курса.</div>
+						<div class="consultation__form-wrap">
+							<div class="input-wrap input-wrap_name">
+								<input type="text" class="consultation__input input input_white" placeholder="Ваше имя">
+								<i class="icon icon-user-gray"></i>
+							</div>
+							<div class="input-wrap input-wrap_phone">
+								<input type="text" class="consultation__input input input_white" placeholder="Телефон *">
+								<i class="icon icon-phone-gray"></i>
+							</div>
+							<div class="input-wrap input-wrap_email">
+								<input type="text" class="consultation__input input input_white" placeholder="Электроная почта">
+								<i class="icon icon-mail-gray"></i>
+							</div>
+						</div>
+						<button class="consultation__button button button_yellow button_block">сориентируйте меня</button>
+						<div class="consultation__desc">Ваши данные находятся в безопасности</div>
+					</div>
+					<div class="consultation__quote">
+						<div class="consultation__text">Доверьте обучение вас и ваших сотрудников профессионалам. <br />Мы бесплатно проведем аудит охраны труда и объясним почему вам нужно проходить или наоборот не нужно, те или иные курсы.</div>
+						<div class="consultation__persona"><span>ЛЫСАК</span> Алена Петровна</div>
+						<div class="consultation__position">Директор департамента дополнительного образования Клинского института Охраны и Условий труда</div>
+						<div class="consultation__signature"><img src="upload/painting.png" alt=""></div>
+						</div>
+				</div>
+				<div class="consultation__img"><img src="upload/consultation.png" alt=""></div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container row">
+			<div class="footer__contacts col">
+				<div class="footer__logo"><img src="upload/logo.png" alt=""></div>
+				<div class="footer__phone">
+					<div class="icon-white"><i class="icon icon-home"></i></div>
+					<p>+88015 1457 5879</p>
+				</div>
+				<div class="footer__address">
+					<div class="icon-white"><i class="icon icon-call"></i></div>
+					<p>г. Москва, ул.Пушкина д.1</p>
+				</div>
+			</div>
+			<div class="footer__col footer__col_middle col">
+				<div class="row">
+					<div class="footer__nav col">
+						<div class="footer__title">услуги</div>
+						<ul>
+							<li><a href="">СОУП</a></li>
+							<li><a href="">ХАССП</a></li>
+							<li><a href="">Производственный контроль</a></li>
+							<li><a href="">Паспорт антитеррора</a></li>
+							<li><a href="">Аудит охраны труда</a></li>
+						</ul>
+					</div>
+					<div class="footer__nav footer__nav_right col">
+						<div class="footer__title">медицина</div>
+						<ul>
+							<li><a href="">Регистрация медицинских изделий (РУ)</a></li>
+							<li><a href="">Свидетельство о гос. регистрации (СГР)</a></li>
+							<li><a href="">Регистрация лекарственных средств (РЛС)</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__nav footer__nav_line">
+					<ul>
+						<li><a href="">обучение</a></li>
+						<li><a href="">партнеры</a></li>
+						<li><a href="">о компании</a></li>
+						<li><a href="">контакты</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__col footer__col_right col">
+				<div class="footer__nav">
+					<div class="footer__title">сертификация</div>
+					<ul>
+						<li><a href="">Сертификат соответствия ТР ТС</a></li>
+						<li><a href="">Декларация соответствия ТР ТС</a></li>
+						<li><a href="">Сертификат соответствия ГОСТ Р</a></li>
+						<li><a href="">Сертификат сейсмостойкости</a></li>
+						<li><a href="">Сертификат взрывозащиты</a></li>
+						<li><a href="">Пожарный сертификат</a></li>
+						<li><a href="">Сертификат происхождения товара</a></li>
+						<li><a href="">Отказное письмо</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

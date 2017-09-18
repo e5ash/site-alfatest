@@ -1,0 +1,605 @@
+// SASS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home
+//   width: $icon-home-width
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites
+$arrow-left-name: 'arrow-left'
+$arrow-left-x: 297px
+$arrow-left-y: 97px
+$arrow-left-offset-x: -297px
+$arrow-left-offset-y: -97px
+$arrow-left-width: 8px
+$arrow-left-height: 14px
+$arrow-left-total-width: 311px
+$arrow-left-total-height: 290px
+$arrow-left-image: 'sprite.png'
+$arrow-left: (297px, 97px, -297px, -97px, 8px, 14px, 311px, 290px, 'sprite.png', 'arrow-left', )
+$arrow-right-name: 'arrow-right'
+$arrow-right-x: 297px
+$arrow-right-y: 83px
+$arrow-right-offset-x: -297px
+$arrow-right-offset-y: -83px
+$arrow-right-width: 8px
+$arrow-right-height: 14px
+$arrow-right-total-width: 311px
+$arrow-right-total-height: 290px
+$arrow-right-image: 'sprite.png'
+$arrow-right: (297px, 83px, -297px, -83px, 8px, 14px, 311px, 290px, 'sprite.png', 'arrow-right', )
+$budget-name: 'budget'
+$budget-x: 0px
+$budget-y: 159px
+$budget-offset-x: 0px
+$budget-offset-y: -159px
+$budget-width: 48px
+$budget-height: 48px
+$budget-total-width: 311px
+$budget-total-height: 290px
+$budget-image: 'sprite.png'
+$budget: (0px, 159px, 0px, -159px, 48px, 48px, 311px, 290px, 'sprite.png', 'budget', )
+$call-name: 'call'
+$call-x: 297px
+$call-y: 121px
+$call-offset-x: -297px
+$call-offset-y: -121px
+$call-width: 9px
+$call-height: 9px
+$call-total-width: 311px
+$call-total-height: 290px
+$call-image: 'sprite.png'
+$call: (297px, 121px, -297px, -121px, 9px, 9px, 311px, 290px, 'sprite.png', 'call', )
+$check-name: 'check'
+$check-x: 81px
+$check-y: 122px
+$check-offset-x: -81px
+$check-offset-y: -122px
+$check-width: 44px
+$check-height: 37px
+$check-total-width: 311px
+$check-total-height: 290px
+$check-image: 'sprite.png'
+$check: (81px, 122px, -81px, -122px, 44px, 37px, 311px, 290px, 'sprite.png', 'check', )
+$checklist-name: 'checklist'
+$checklist-x: 254px
+$checklist-y: 43px
+$checklist-offset-x: -254px
+$checklist-offset-y: -43px
+$checklist-width: 43px
+$checklist-height: 43px
+$checklist-total-width: 311px
+$checklist-total-height: 290px
+$checklist-image: 'sprite.png'
+$checklist: (254px, 43px, -254px, -43px, 43px, 43px, 311px, 290px, 'sprite.png', 'checklist', )
+$class-name: 'class'
+$class-x: 44px
+$class-y: 251px
+$class-offset-x: -44px
+$class-offset-y: -251px
+$class-width: 43px
+$class-height: 37px
+$class-total-width: 311px
+$class-total-height: 290px
+$class-image: 'sprite.png'
+$class: (44px, 251px, -44px, -251px, 43px, 37px, 311px, 290px, 'sprite.png', 'class', )
+$clock-name: 'clock'
+$clock-x: 254px
+$clock-y: 86px
+$clock-offset-x: -254px
+$clock-offset-y: -86px
+$clock-width: 43px
+$clock-height: 43px
+$clock-total-width: 311px
+$clock-total-height: 290px
+$clock-image: 'sprite.png'
+$clock: (254px, 86px, -254px, -86px, 43px, 43px, 311px, 290px, 'sprite.png', 'clock', )
+$conveyor-name: 'conveyor'
+$conveyor-x: 87px
+$conveyor-y: 251px
+$conveyor-offset-x: -87px
+$conveyor-offset-y: -251px
+$conveyor-width: 43px
+$conveyor-height: 36px
+$conveyor-total-width: 311px
+$conveyor-total-height: 290px
+$conveyor-image: 'sprite.png'
+$conveyor: (87px, 251px, -87px, -251px, 43px, 36px, 311px, 290px, 'sprite.png', 'conveyor', )
+$crane-name: 'crane'
+$crane-x: 48px
+$crane-y: 159px
+$crane-offset-x: -48px
+$crane-offset-y: -159px
+$crane-width: 48px
+$crane-height: 48px
+$crane-total-width: 311px
+$crane-total-height: 290px
+$crane-image: 'sprite.png'
+$crane: (48px, 159px, -48px, -159px, 48px, 48px, 311px, 290px, 'sprite.png', 'crane', )
+$customer-service-name: 'customer-service'
+$customer-service-x: 156px
+$customer-service-y: 81px
+$customer-service-offset-x: -156px
+$customer-service-offset-y: -81px
+$customer-service-width: 49px
+$customer-service-height: 48px
+$customer-service-total-width: 311px
+$customer-service-total-height: 290px
+$customer-service-image: 'sprite.png'
+$customer-service: (156px, 81px, -156px, -81px, 49px, 48px, 311px, 290px, 'sprite.png', 'customer-service', )
+$diploma-name: 'diploma'
+$diploma-x: 254px
+$diploma-y: 129px
+$diploma-offset-x: -254px
+$diploma-offset-y: -129px
+$diploma-width: 38px
+$diploma-height: 47px
+$diploma-total-width: 311px
+$diploma-total-height: 290px
+$diploma-image: 'sprite.png'
+$diploma: (254px, 129px, -254px, -129px, 38px, 47px, 311px, 290px, 'sprite.png', 'diploma', )
+$documents-name: 'documents'
+$documents-x: 0px
+$documents-y: 0px
+$documents-offset-x: 0px
+$documents-offset-y: 0px
+$documents-width: 81px
+$documents-height: 79px
+$documents-total-width: 311px
+$documents-total-height: 290px
+$documents-image: 'sprite.png'
+$documents: (0px, 0px, 0px, 0px, 81px, 79px, 311px, 290px, 'sprite.png', 'documents', )
+$earth-name: 'earth'
+$earth-x: 44px
+$earth-y: 207px
+$earth-offset-x: -44px
+$earth-offset-y: -207px
+$earth-width: 44px
+$earth-height: 44px
+$earth-total-width: 311px
+$earth-total-height: 290px
+$earth-image: 'sprite.png'
+$earth: (44px, 207px, -44px, -207px, 44px, 44px, 311px, 290px, 'sprite.png', 'earth', )
+$ebook-name: 'ebook'
+$ebook-x: 254px
+$ebook-y: 176px
+$ebook-offset-x: -254px
+$ebook-offset-y: -176px
+$ebook-width: 43px
+$ebook-height: 40px
+$ebook-total-width: 311px
+$ebook-total-height: 290px
+$ebook-image: 'sprite.png'
+$ebook: (254px, 176px, -254px, -176px, 43px, 40px, 311px, 290px, 'sprite.png', 'ebook', )
+$exam-name: 'exam'
+$exam-x: 143px
+$exam-y: 159px
+$exam-offset-x: -143px
+$exam-offset-y: -159px
+$exam-width: 45px
+$exam-height: 48px
+$exam-total-width: 311px
+$exam-total-height: 290px
+$exam-image: 'sprite.png'
+$exam: (143px, 159px, -143px, -159px, 45px, 48px, 311px, 290px, 'sprite.png', 'exam', )
+$group-name: 'group'
+$group-x: 218px
+$group-y: 207px
+$group-offset-x: -218px
+$group-offset-y: -207px
+$group-width: 24px
+$group-height: 27px
+$group-total-width: 311px
+$group-total-height: 290px
+$group-image: 'sprite.png'
+$group: (218px, 207px, -218px, -207px, 24px, 27px, 311px, 290px, 'sprite.png', 'group', )
+$home-yellow-name: 'home-yellow'
+$home-yellow-x: 196px
+$home-yellow-y: 257px
+$home-yellow-offset-x: -196px
+$home-yellow-offset-y: -257px
+$home-yellow-width: 22px
+$home-yellow-height: 21px
+$home-yellow-total-width: 311px
+$home-yellow-total-height: 290px
+$home-yellow-image: 'sprite.png'
+$home-yellow: (196px, 257px, -196px, -257px, 22px, 21px, 311px, 290px, 'sprite.png', 'home-yellow', )
+$home-name: 'home'
+$home-x: 297px
+$home-y: 111px
+$home-offset-x: -297px
+$home-offset-y: -111px
+$home-width: 11px
+$home-height: 10px
+$home-total-width: 311px
+$home-total-height: 290px
+$home-image: 'sprite.png'
+$home: (297px, 111px, -297px, -111px, 11px, 10px, 311px, 290px, 'sprite.png', 'home', )
+$inbox-name: 'inbox'
+$inbox-x: 254px
+$inbox-y: 216px
+$inbox-offset-x: -254px
+$inbox-offset-y: -216px
+$inbox-width: 43px
+$inbox-height: 34px
+$inbox-total-width: 311px
+$inbox-total-height: 290px
+$inbox-image: 'sprite.png'
+$inbox: (254px, 216px, -254px, -216px, 43px, 34px, 311px, 290px, 'sprite.png', 'inbox', )
+$jpg-name: 'jpg'
+$jpg-x: 216px
+$jpg-y: 94px
+$jpg-offset-x: -216px
+$jpg-offset-y: -94px
+$jpg-width: 33px
+$jpg-height: 38px
+$jpg-total-width: 311px
+$jpg-total-height: 290px
+$jpg-image: 'sprite.png'
+$jpg: (216px, 94px, -216px, -94px, 33px, 38px, 311px, 290px, 'sprite.png', 'jpg', )
+$lab-name: 'lab'
+$lab-x: 0px
+$lab-y: 251px
+$lab-offset-x: 0px
+$lab-offset-y: -251px
+$lab-width: 44px
+$lab-height: 39px
+$lab-total-width: 311px
+$lab-total-height: 290px
+$lab-image: 'sprite.png'
+$lab: (0px, 251px, 0px, -251px, 44px, 39px, 311px, 290px, 'sprite.png', 'lab', )
+$li-name: 'li'
+$li-x: 297px
+$li-y: 71px
+$li-offset-x: -297px
+$li-offset-y: -71px
+$li-width: 11px
+$li-height: 12px
+$li-total-width: 311px
+$li-total-height: 290px
+$li-image: 'sprite.png'
+$li: (297px, 71px, -297px, -71px, 11px, 12px, 311px, 290px, 'sprite.png', 'li', )
+$license-name: 'license'
+$license-x: 130px
+$license-y: 251px
+$license-offset-x: -130px
+$license-offset-y: -251px
+$license-width: 44px
+$license-height: 33px
+$license-total-width: 311px
+$license-total-height: 290px
+$license-image: 'sprite.png'
+$license: (130px, 251px, -130px, -251px, 44px, 33px, 311px, 290px, 'sprite.png', 'license', )
+$line-name: 'line'
+$line-x: 174px
+$line-y: 251px
+$line-offset-x: -174px
+$line-offset-y: -251px
+$line-width: 92px
+$line-height: 6px
+$line-total-width: 311px
+$line-total-height: 290px
+$line-image: 'sprite.png'
+$line: (174px, 251px, -174px, -251px, 92px, 6px, 311px, 290px, 'sprite.png', 'line', )
+$mail-gray-name: 'mail-gray'
+$mail-gray-x: 188px
+$mail-gray-y: 185px
+$mail-gray-offset-x: -188px
+$mail-gray-offset-y: -185px
+$mail-gray-width: 27px
+$mail-gray-height: 18px
+$mail-gray-total-width: 311px
+$mail-gray-total-height: 290px
+$mail-gray-image: 'sprite.png'
+$mail-gray: (188px, 185px, -188px, -185px, 27px, 18px, 311px, 290px, 'sprite.png', 'mail-gray', )
+$mail-yellow-name: 'mail-yellow'
+$mail-yellow-x: 218px
+$mail-yellow-y: 234px
+$mail-yellow-offset-x: -218px
+$mail-yellow-offset-y: -234px
+$mail-yellow-width: 21px
+$mail-yellow-height: 15px
+$mail-yellow-total-width: 311px
+$mail-yellow-total-height: 290px
+$mail-yellow-image: 'sprite.png'
+$mail-yellow: (218px, 234px, -218px, -234px, 21px, 15px, 311px, 290px, 'sprite.png', 'mail-yellow', )
+$manager-name: 'manager'
+$manager-x: 81px
+$manager-y: 0px
+$manager-offset-x: -81px
+$manager-offset-y: 0px
+$manager-width: 75px
+$manager-height: 79px
+$manager-total-width: 311px
+$manager-total-height: 290px
+$manager-image: 'sprite.png'
+$manager: (81px, 0px, -81px, 0px, 75px, 79px, 311px, 290px, 'sprite.png', 'manager', )
+$manufacturer-name: 'manufacturer'
+$manufacturer-x: 254px
+$manufacturer-y: 0px
+$manufacturer-offset-x: -254px
+$manufacturer-offset-y: 0px
+$manufacturer-width: 43px
+$manufacturer-height: 43px
+$manufacturer-total-width: 311px
+$manufacturer-total-height: 290px
+$manufacturer-image: 'sprite.png'
+$manufacturer: (254px, 0px, -254px, 0px, 43px, 43px, 311px, 290px, 'sprite.png', 'manufacturer', )
+$medal-name: 'medal'
+$medal-x: 216px
+$medal-y: 0px
+$medal-offset-x: -216px
+$medal-offset-y: 0px
+$medal-width: 38px
+$medal-height: 51px
+$medal-total-width: 311px
+$medal-total-height: 290px
+$medal-image: 'sprite.png'
+$medal: (216px, 0px, -216px, 0px, 38px, 51px, 311px, 290px, 'sprite.png', 'medal', )
+$message-name: 'message'
+$message-x: 125px
+$message-y: 122px
+$message-offset-x: -125px
+$message-offset-y: -122px
+$message-width: 31px
+$message-height: 29px
+$message-total-width: 311px
+$message-total-height: 290px
+$message-image: 'sprite.png'
+$message: (125px, 122px, -125px, -122px, 31px, 29px, 311px, 290px, 'sprite.png', 'message', )
+$phone-gray-name: 'phone-gray'
+$phone-gray-x: 297px
+$phone-gray-y: 0px
+$phone-gray-offset-x: -297px
+$phone-gray-offset-y: 0px
+$phone-gray-width: 14px
+$phone-gray-height: 26px
+$phone-gray-total-width: 311px
+$phone-gray-total-height: 290px
+$phone-gray-image: 'sprite.png'
+$phone-gray: (297px, 0px, -297px, 0px, 14px, 26px, 311px, 290px, 'sprite.png', 'phone-gray', )
+$phone-yellow-name: 'phone-yellow'
+$phone-yellow-x: 297px
+$phone-yellow-y: 26px
+$phone-yellow-offset-x: -297px
+$phone-yellow-offset-y: -26px
+$phone-yellow-width: 13px
+$phone-yellow-height: 23px
+$phone-yellow-total-width: 311px
+$phone-yellow-total-height: 290px
+$phone-yellow-image: 'sprite.png'
+$phone-yellow: (297px, 26px, -297px, -26px, 13px, 23px, 311px, 290px, 'sprite.png', 'phone-yellow', )
+$pipes-name: 'pipes'
+$pipes-x: 96px
+$pipes-y: 159px
+$pipes-offset-x: -96px
+$pipes-offset-y: -159px
+$pipes-width: 47px
+$pipes-height: 48px
+$pipes-total-width: 311px
+$pipes-total-height: 290px
+$pipes-image: 'sprite.png'
+$pipes: (96px, 159px, -96px, -159px, 47px, 48px, 311px, 290px, 'sprite.png', 'pipes', )
+$presentation-name: 'presentation'
+$presentation-x: 175px
+$presentation-y: 207px
+$presentation-offset-x: -175px
+$presentation-offset-y: -207px
+$presentation-width: 43px
+$presentation-height: 43px
+$presentation-total-width: 311px
+$presentation-total-height: 290px
+$presentation-image: 'sprite.png'
+$presentation: (175px, 207px, -175px, -207px, 43px, 43px, 311px, 290px, 'sprite.png', 'presentation', )
+$quote-after-name: 'quote-after'
+$quote-after-x: 297px
+$quote-after-y: 49px
+$quote-after-offset-x: -297px
+$quote-after-offset-y: -49px
+$quote-after-width: 12px
+$quote-after-height: 11px
+$quote-after-total-width: 311px
+$quote-after-total-height: 290px
+$quote-after-image: 'sprite.png'
+$quote-after: (297px, 49px, -297px, -49px, 12px, 11px, 311px, 290px, 'sprite.png', 'quote-after', )
+$quote-before-name: 'quote-before'
+$quote-before-x: 297px
+$quote-before-y: 60px
+$quote-before-offset-x: -297px
+$quote-before-offset-y: -60px
+$quote-before-width: 12px
+$quote-before-height: 11px
+$quote-before-total-width: 311px
+$quote-before-total-height: 290px
+$quote-before-image: 'sprite.png'
+$quote-before: (297px, 60px, -297px, -60px, 12px, 11px, 311px, 290px, 'sprite.png', 'quote-before', )
+$renewable-energy-name: 'renewable-energy'
+$renewable-energy-x: 0px
+$renewable-energy-y: 207px
+$renewable-energy-offset-x: 0px
+$renewable-energy-offset-y: -207px
+$renewable-energy-width: 44px
+$renewable-energy-height: 44px
+$renewable-energy-total-width: 311px
+$renewable-energy-total-height: 290px
+$renewable-energy-image: 'sprite.png'
+$renewable-energy: (0px, 207px, 0px, -207px, 44px, 44px, 311px, 290px, 'sprite.png', 'renewable-energy', )
+$search-name: 'search'
+$search-x: 216px
+$search-y: 51px
+$search-offset-x: -216px
+$search-offset-y: -51px
+$search-width: 36px
+$search-height: 43px
+$search-total-width: 311px
+$search-total-height: 290px
+$search-image: 'sprite.png'
+$search: (216px, 51px, -216px, -51px, 36px, 43px, 311px, 290px, 'sprite.png', 'search', )
+$security-name: 'security'
+$security-x: 216px
+$security-y: 167px
+$security-offset-x: -216px
+$security-offset-y: -167px
+$security-width: 29px
+$security-height: 35px
+$security-total-width: 311px
+$security-total-height: 290px
+$security-image: 'sprite.png'
+$security: (216px, 167px, -216px, -167px, 29px, 35px, 311px, 290px, 'sprite.png', 'security', )
+$site-yellow-name: 'site-yellow'
+$site-yellow-x: 174px
+$site-yellow-y: 257px
+$site-yellow-offset-x: -174px
+$site-yellow-offset-y: -257px
+$site-yellow-width: 22px
+$site-yellow-height: 23px
+$site-yellow-total-width: 311px
+$site-yellow-total-height: 290px
+$site-yellow-image: 'sprite.png'
+$site-yellow: (174px, 257px, -174px, -257px, 22px, 23px, 311px, 290px, 'sprite.png', 'site-yellow', )
+$smartphone-name: 'smartphone'
+$smartphone-x: 216px
+$smartphone-y: 132px
+$smartphone-offset-x: -216px
+$smartphone-offset-y: -132px
+$smartphone-width: 35px
+$smartphone-height: 35px
+$smartphone-total-width: 311px
+$smartphone-total-height: 290px
+$smartphone-image: 'sprite.png'
+$smartphone: (216px, 132px, -216px, -132px, 35px, 35px, 311px, 290px, 'sprite.png', 'smartphone', )
+$tank-wagon-name: 'tank-wagon'
+$tank-wagon-x: 81px
+$tank-wagon-y: 79px
+$tank-wagon-offset-x: -81px
+$tank-wagon-offset-y: -79px
+$tank-wagon-width: 72px
+$tank-wagon-height: 43px
+$tank-wagon-total-width: 311px
+$tank-wagon-total-height: 290px
+$tank-wagon-image: 'sprite.png'
+$tank-wagon: (81px, 79px, -81px, -79px, 72px, 43px, 311px, 290px, 'sprite.png', 'tank-wagon', )
+$user-gray-name: 'user-gray'
+$user-gray-x: 188px
+$user-gray-y: 159px
+$user-gray-offset-x: -188px
+$user-gray-offset-y: -159px
+$user-gray-width: 25px
+$user-gray-height: 26px
+$user-gray-total-width: 311px
+$user-gray-total-height: 290px
+$user-gray-image: 'sprite.png'
+$user-gray: (188px, 159px, -188px, -159px, 25px, 26px, 311px, 290px, 'sprite.png', 'user-gray', )
+$verified-list-name: 'verified-list'
+$verified-list-x: 156px
+$verified-list-y: 0px
+$verified-list-offset-x: -156px
+$verified-list-offset-y: 0px
+$verified-list-width: 60px
+$verified-list-height: 81px
+$verified-list-total-width: 311px
+$verified-list-total-height: 290px
+$verified-list-image: 'sprite.png'
+$verified-list: (156px, 0px, -156px, 0px, 60px, 81px, 311px, 290px, 'sprite.png', 'verified-list', )
+$vest-name: 'vest'
+$vest-x: 132px
+$vest-y: 207px
+$vest-offset-x: -132px
+$vest-offset-y: -207px
+$vest-width: 43px
+$vest-height: 43px
+$vest-total-width: 311px
+$vest-total-height: 290px
+$vest-image: 'sprite.png'
+$vest: (132px, 207px, -132px, -207px, 43px, 43px, 311px, 290px, 'sprite.png', 'vest', )
+$video-player-name: 'video-player'
+$video-player-x: 88px
+$video-player-y: 207px
+$video-player-offset-x: -88px
+$video-player-offset-y: -207px
+$video-player-width: 44px
+$video-player-height: 44px
+$video-player-total-width: 311px
+$video-player-total-height: 290px
+$video-player-image: 'sprite.png'
+$video-player: (88px, 207px, -88px, -207px, 44px, 44px, 311px, 290px, 'sprite.png', 'video-player', )
+$webinar-name: 'webinar'
+$webinar-x: 156px
+$webinar-y: 129px
+$webinar-offset-x: -156px
+$webinar-offset-y: -129px
+$webinar-width: 49px
+$webinar-height: 29px
+$webinar-total-width: 311px
+$webinar-total-height: 290px
+$webinar-image: 'sprite.png'
+$webinar: (156px, 129px, -156px, -129px, 49px, 29px, 311px, 290px, 'sprite.png', 'webinar', )
+$workflow-name: 'workflow'
+$workflow-x: 0px
+$workflow-y: 79px
+$workflow-offset-x: 0px
+$workflow-offset-y: -79px
+$workflow-width: 75px
+$workflow-height: 80px
+$workflow-total-width: 311px
+$workflow-total-height: 290px
+$workflow-image: 'sprite.png'
+$workflow: (0px, 79px, 0px, -79px, 75px, 80px, 311px, 290px, 'sprite.png', 'workflow', )
+$spritesheet-width: 311px
+$spritesheet-height: 290px
+$spritesheet-image: 'sprite.png'
+$spritesheet-sprites: ($arrow-left, $arrow-right, $budget, $call, $check, $checklist, $class, $clock, $conveyor, $crane, $customer-service, $diploma, $documents, $earth, $ebook, $exam, $group, $home-yellow, $home, $inbox, $jpg, $lab, $li, $license, $line, $mail-gray, $mail-yellow, $manager, $manufacturer, $medal, $message, $phone-gray, $phone-yellow, $pipes, $presentation, $quote-after, $quote-before, $renewable-energy, $search, $security, $site-yellow, $smartphone, $tank-wagon, $user-gray, $verified-list, $vest, $video-player, $webinar, $workflow, )
+$spritesheet: (311px, 290px, 'sprite.png', $spritesheet-sprites, )
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home
+//   @include sprite-width($icon-home)
+//
+// .icon-email
+//   @include sprite($icon-email)
+//
+// Example usage in HTML:
+//   `display: block` sprite:
+//   <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//   // CSS
+//   .icon {
+//     display: inline-block;
+//   }
+//
+//   // HTML
+//   <i class="icon icon-home"></i>
+@mixin sprite-width($sprite)
+  width: nth($sprite, 5)
+
+@mixin sprite-height($sprite)
+  height: nth($sprite, 6)
+
+@mixin sprite-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)
+  $sprite-offset-y: nth($sprite, 4)
+  background-position: $sprite-offset-x  $sprite-offset-y
+
+@mixin sprite-image($sprite)
+  $sprite-image: nth($sprite, 9)
+  background-image: url(#{$sprite-image})
+
+@mixin sprite($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SASS
+//
+// @include sprites($spritesheet-sprites)
+@mixin sprites($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include sprite($sprite)

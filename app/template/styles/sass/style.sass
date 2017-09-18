@@ -1,19 +1,17 @@
 /* Including styles files */
 @import sprite.sass
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext')
+@import url('../../libs/fancybox/dist/jquery.fancybox.css')
+@import url('../../libs/slick-carousel/slick/slick.css')
+@import url('../../libs/slick-carousel/slick/slick-theme.css')
 
-
-/* Including fonts */
-@font-face
-	src: url('../../fonts/')
-	font-family: 
-	font-weight: 
 
 
 
 /* Global settings */
-$font-size: 16px
-$font-family-1: 'Tahoma', sans-serif
-$color-1: #000
+$font-size: 14px
+$font-family-1: 'Open Sans', sans-serif
+$color-1: #242630
 
 
 
@@ -27,7 +25,8 @@ body
 	font-size: $font-size
 	font-family: $font-family-1
 	color: $color-1
-	background: white
+	background: #ececdf
+	overflow-x: hidden
 
 header, nav, main, section, article, aside, footer, li, .block
 	display: block
@@ -44,6 +43,8 @@ h1, h2, h3, h4, h5, h6
 	font-size: inherit
 	font-weight: inherit
 
+img
+	display: block
 
 ul
 	font-size: 0
@@ -57,7 +58,7 @@ a
 	color: $color-1
 	text-decoration: none
 	border-bottom: 1px solid transparent
-	transition: border-bottom color .3s
+	transition: border-bottom .3s
 
 
 .icon
@@ -69,7 +70,7 @@ a
 
 /* Grid */
 .container
-	width: (1140px + 30px)
+	width: (1170px + 30px)
 	padding-left: 15px
 	padding-right: 15px
 
@@ -82,7 +83,6 @@ a
 		clear: both
 
 .row
-	text-align: center
 	font-size: 0
 
 .col
@@ -90,6 +90,7 @@ a
 	display: inline-block
 	vertical-align: top
 	font-size: $font-size
+	text-align: left
 	&_float
 		float: left
 		display: block
@@ -118,7 +119,53 @@ a
 	width: 100%
 	&::placeholder
 		color: #878686
-
+	&_black
+		font-size: 12px
+		padding-left: 16px
+		padding-right: 16px
+		line-height: 35px
+		border-radius: 3px
+		background-color: #2f3032
+		font-weight: 700
+		color: white
+		&::placeholder
+			color: #555758
+	&_white
+		padding-left: 22px
+		padding-right: 56px
+		line-height: 60px
+		border: 1px solid #dddddd
+		background-color: #ffffff
+		border-radius: 4px
+		font-size: 18px
+		font-weight: 700
+		&::placeholder
+			color: #757575
+	&-wrap
+		position: relative
+		display: inline-block
+		vertical-align: top
+		margin-bottom: 10px
+		.icon
+			position: absolute
+			&-user-gray
+				top: 17px
+				right: 20px
+			&-phone-gray
+				top: 17px
+				right: 18px
+			&-mail-gray
+				top: 23px
+				right: 18px
+		&_name
+			width: 100%
+		&_phone
+			width: 240px
+			margin-right: 10px
+		&_email
+			width: 360px
+	&_hidden
+		display: none
 .textarea
 	font-size: $font-size
 	font-family: $font-family-1
@@ -140,7 +187,27 @@ a
 	margin-right: auto
 	text-align: center
 	transition: .3s
-
+	&_yellow
+		font-size: 11px
+		font-weight: 700
+		background-color: #f5c12f
+		text-transform: uppercase
+		border-radius: 3px
+	&_block
+		width: 100%
+	&_minni
+		width: 145px
+	&_minni-x2
+		width: 115px
+	&_small
+		width: 175px
+		font-size: 16px
+	&_28
+		line-height: 28px
+	&_35
+		line-height: 35px
+	&_51
+		line-height: 51px
 .input, .textarea
 	transition: border-color .3s
 
@@ -157,3 +224,1341 @@ a
 .center, .container
 	margin-left: auto
 	margin-right: auto
+
+.icon
+	&-black
+		width: 62px
+		height: 62px
+		line-height: 60px
+		text-align: center
+		border-radius: 3px
+		border: 1px solid #333436
+		background-color: #2f3032
+	&-white
+		display: inline-block
+		vertical-align: middle
+		font-size: 0
+		width: 27px
+		height: 27px
+		line-height: 27px
+		text-align: center
+		border-radius: 50%
+		border: 1px solid #ededed
+		background-color: #f6f6f6
+		+ p
+			display: inline-block
+			vertical-align: middle
+			margin-left: 7px
+			font-size: 11px
+			font-weight: 700
+			color: #7a7c85
+			a
+				display: block
+				color: #7a7c85
+
+.title
+	font-size: 24px
+	text-transform: uppercase
+	text-align: center
+	font-weight: 700
+
+.c
+	&-yellow
+		color: #f5c12f
+
+.border
+	&-top
+		border-top: 2px solid #d0d0ca
+	&-bottom
+		border-bottom: 2px solid #d0d0ca
+
+.popup
+	display: none
+	width: 305px
+	border-radius: 5px
+	padding: 33px 22px
+	background: white
+	&__head
+		font-size: 0
+		margin-bottom: 20px
+	&__text
+		margin-left: 10px
+		font-weight: 700
+		max-width: 187px
+		margin-top: -4px
+	&__title
+		font-size: 18px
+		text-transform: uppercase
+		opacity: .8
+		border-bottom: 1px solid #d0d0ca
+		padding-bottom: 5px
+		margin-bottom: 5px
+	&__desc
+		opacity: 0.5
+		font-size: 12px
+	
+	&__icon, &__text
+		display: inline-block
+		vertical-align: top
+
+	&__body
+
+	&__input
+		margin-bottom: 12px
+	&__button
+		margin-bottom: 6px
+	&__link
+		font-size: 12px
+		text-align: center
+		a
+			border-color: #2f3032
+			&:hover
+				border-color: transparent
+	&_coures
+		color: #d5d6d7
+		background-color: #30343b
+		padding: 20px
+		width: 370px
+		.popup
+			background-color: #30343b
+			&__title
+				font-size: 18px
+				font-weight: 700
+				text-transform: uppercase
+			&__desc
+				font-size: 14px
+				margin-bottom: 30px
+				font-weight: 700
+				opacity: .8
+			&__button
+				width: 116px
+			&__text
+				display: block
+				max-width: 100%
+				text-align: center
+				font-weight: 400
+				font-size: 12px
+				margin-top: 10px
+				opacity: .8
+
+.header
+	padding-top: 20px
+	padding-bottom: 18px
+	&__address
+		padding-top: 3px
+		margin-left: 295px
+		margin-right: 195px
+		width: 185px
+	&__phones
+		width: 128px
+	&__button
+		display: inline-block
+		vertical-align: middle
+		margin-left: 23px
+		position: relative
+		top: 3px
+
+.nav
+	position: relative
+	color: white
+	background-color: #252a30
+	text-transform: uppercase
+	border-top: 1px solid #7b7e81
+	li
+		font-size: 0
+		padding: 0 10px
+		&.selected
+			a
+				background: #2d3139
+				&:before, &:after
+					opacity: 1
+
+	a
+		position: relative
+		display: block
+		color: white
+		opacity: 0.6
+		font-size: 10px
+		padding: 13.5px 0
+		transition: .3s
+		cursor: pointer
+		&:before
+			opacity: 0
+			position: absolute
+			top: 0
+			left: -21px
+			display: block
+			content: ''
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 0 21px 42px 0
+			border-color: transparent #2d3139 transparent transparent
+			transition: .3s
+		&:after
+			opacity: 0
+			position: absolute
+			top: 0
+			right: -21px
+			display: block
+			content: ''
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 42px 0 0 21px
+			border-color: transparent transparent transparent #2d3139
+			transition: .3s
+		&:hover
+			background: #2d3139
+			&:before, &:after
+				opacity: 1
+	&__hidden
+		z-index: 1001
+		display: none
+		background: #2d3139
+		padding: 25px 0 20px
+		position: absolute
+		top: 100%
+		left: 0
+		width: 100%
+		transition: .3s
+		ul
+			float: left
+			margin-right: 45px
+			&:last-of-type
+				margin-right: 0
+		li
+			display: block
+			margin-bottom: 20px
+
+			&:last-of-type
+				margin-bottom: 0
+		a
+			font-size: 16px
+			padding: 0
+			text-transform: none
+			&:before, &:after
+				display: none
+
+
+.slider
+	position: relative
+	&__list
+		margin-bottom: 0 !important
+	&__item
+		position: relative
+	&__img
+		position: relative
+		&:after
+			z-index: 1
+			position: absolute
+			content: ''
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			background: rgba(0,0,0,0.8)
+		img
+			position: relative
+			margin-left: auto
+			margin-right: auto
+	&__wrap
+		z-index: 2
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+
+	&__title
+		padding-top: 90px
+		font-size: 30px
+		font-weight: 700
+		text-transform: uppercase
+		text-align: center
+		color: #ffffff
+	&__text
+		opacity: 0.6
+		font-size: 16px
+		font-weight: 700
+		max-width: 605px
+		margin-left: auto
+		margin-right: auto
+		color: #ffffff
+		text-align: center
+		margin-top: 8px
+		margin-bottom: 21px
+	&__arrows
+		position: absolute
+		top: 50%
+		left: 0
+		width: 100%
+		.container
+			position: relative
+	.slick-dots
+		bottom: 23px
+		li
+			width: 22px
+			height: 22px
+			line-height: 22px
+			background: transparent
+			text-align: center
+			margin: 0 3px
+			border-radius: 50%
+			&.slick-active
+				background-color: #f5c12f
+				button
+					background: transparent
+					border-color: transparent
+		button
+			width: 17px
+			height: 17px
+			line-height: 22px
+			border: 1px solid #393838
+			background-color: #1d1d1d
+			border-radius: 50%
+			margin-left: auto
+			margin-right: auto
+			position: relative
+			top: 2px
+			left: 1px
+			&:before
+				display: none
+
+
+.arrows
+	.slick-arrow
+		width: 35px
+		height: 35px
+		border: 1px solid #525252
+		background-color: #404040
+		opacity: 0.8
+		border-radius: 50%
+		font-size: 0
+		text-align: center
+		transition: .3s
+		&:before
+			display: none
+		&:after
+			content: ''
+			display: inline-block
+		&:hover
+			opacity: 1
+	.slick-prev
+		left: 15px
+		&:after
+			@include sprite($arrow-left)
+		
+	.slick-next
+		right: 15px
+		&:after
+			@include sprite($arrow-right)
+
+.main
+	&-text
+		margin-top: 20px
+		padding-top: 20px
+		&__title
+			margin-bottom: 22px
+		&__wrap
+			max-width: 830px
+			margin-left: auto
+			margin-right: auto
+			font-weight: 700
+			color: #959699
+			line-height: 24px
+			text-align: center
+			padding-bottom: 42px
+
+
+.advantages
+	padding-top: 45px
+	padding-bottom: 40px
+	&_list
+		padding-bottom: 10px
+		.advantages
+			&__item
+				margin-bottom: 25px
+			&__img
+				&:before
+					background: rgba(0, 0, 0, 0.2)
+	&__title
+		margin-bottom: 24px
+	&__list
+		text-align: center
+		font-size: 0
+	&__col
+		width: 33.3333%
+	&__item
+		width: 370px
+		margin-left: auto
+		margin-right: auto
+		text-align: center
+	&__img
+		position: relative
+		border-radius: 5px
+		&:before
+			position: absolute
+			display: block
+			content: ''
+			width: 100%
+			height: 195px
+			border-radius: 5px
+			background: rgba(0,0,0,.8)
+	&__subtitle
+		display: table-cell
+		font-size: 18px
+		line-height: 15px
+		height: 44px
+		width: 370px
+		vertical-align: middle
+		font-weight: 700
+		border-bottom: 2px solid #d0d0ca
+	&__text
+		font-size: 13px
+		line-height: 24px
+		color: #959699
+
+
+
+.lic
+	padding-top: 42px
+	padding-bottom: 40px
+	&__title
+		&_bottom
+			text-transform: none
+	&__list
+		text-align: center
+		margin-bottom: -20px
+	&__item
+		margin-left: -15px
+		margin-right: -15px
+
+
+
+
+.clients
+	text-align: center
+	color: white
+	background-color: #1f2022
+	padding-top: 46px
+	padding-bottom: 10px
+	&__title
+		margin-bottom: 23px
+		span
+			display: block
+			font-size: 36px
+	&__item
+		margin: 0 30px 35px
+		line-height: 60px
+		vertical-align: middle
+		img
+			display: inline-block
+			vertical-align: middle
+			max-height: 60px
+
+
+
+.consultation
+	background-color: #a4a4a4
+	padding-bottom: 14px
+	.container
+		position: relative
+	&__title
+		width: 650px
+		text-align: center
+		font-size: 36px
+		padding-top: 40px
+		padding-bottom: 24px
+	&__form
+		width: 670px
+		padding: 39px 30px 40px
+		background-color: #e9e9ea
+		&-title
+			font-size: 21px
+			line-height: 32px
+			text-align: center
+			padding: 0 100px
+			margin-bottom: 40px
+		&-wrap
+			font-size: 0
+	&__button
+		line-height: 61px
+		font-size: 24px
+	&__desc
+		font-size: 14px
+		text-align: center
+		color: #8e8e91
+		margin-top: 5px
+	&__quote
+		width: 685px
+		color: #505152
+	&__text
+		font-size: 21px
+		line-height: 30px
+		padding-top: 40px
+		padding-bottom: 25px
+	&__persona
+		font-size: 21px
+		width: 320px
+		margin-left: auto
+		span
+			font-weight: 700
+	&__position
+		width: 320px
+		margin-left: auto
+		font-size: 14px
+		line-height: 18px
+		margin-top: 10px
+	&__signature
+		margin-top: 12px
+		img
+			margin-left: auto
+			margin-right: 19px
+	&__img
+		position: absolute
+		top: 52px
+		right: -270px
+
+.shares
+	margin-top: 20px
+	padding-top: 25px
+	padding-bottom: 50px
+	&__title
+		margin-bottom: 42px
+	&__col
+		width: 50%
+		&:nth-of-type(2)
+			.shares
+				&__item
+					margin-left: auto
+	&__item
+		width: 570px
+	&__wrap
+		position: relative
+	&__img
+		position: relative
+		border-radius: 5px
+		&:before
+			position: absolute
+			display: block
+			content: ''
+			width: 100%
+			height: 301px
+			border-radius: 5px
+			background: rgba(0,0,0,.8)
+	&__text
+		position: absolute
+		font-size: 24px
+		color: #ffffff
+		width: 490px
+		top: 72px
+		left: 41px
+		text-align: center
+		margin-left: auto
+		margin-right: auto
+	&__button
+		position: absolute
+		bottom: 42px
+		left: 198px
+	&__timer
+		margin-top: 10px
+
+.timer
+	&__title
+		font-size: 24px
+		font-weight: 700
+		text-align: center
+		margin-bottom: 10px
+	&__wrap
+		text-align: center
+	&__item
+		display: inline-block
+		vertical-align: top
+		margin-left: 9px
+		margin-right: 9px
+		p
+			position: relative
+			width: 100px
+			height: 74px
+			line-height: 74px
+			color: white
+			font-size: 48px
+			font-weight: 700
+			box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.36)
+			background-color: #333333
+			border-radius: 4px
+			&:before
+				position: absolute
+				content: ''
+				top: 36px
+				left: 4px
+				@include sprite($line)
+		span
+			font-size: 20px
+			text-transform: uppercase
+			color: #959699
+			margin-top: 3px
+
+.services
+	background: url('../../img/bg/services.png') no-repeat center
+	background-size: cover
+	color: white
+	padding-top: 48px
+	padding-bottom: 54px
+	&__maintitle
+		margin-bottom: 20px
+	&__item
+		width: 370px
+		background-color: #222222
+		display: inline-block
+		vertical-align: top
+		text-align: center
+		margin-right: 30px
+		border-radius: 5px
+		padding-bottom: 13px
+		transition: .3s
+		&:last-of-type
+			margin-right: 0
+		&:hover
+			box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.36)
+			.services
+				&__button
+					opacity: 1
+					
+	&__title
+		opacity: 0.8
+		font-size: 24px
+		font-weight: 700
+		padding-top: 25px
+		padding-bottom: 20px
+	&__data
+		min-height: 114px
+		&_big
+			ul
+				li
+					font-size: 24px
+					line-height: 24px
+					padding-left: 45px
+					padding-right: 45px
+					text-transform: uppercase
+					height: 113px
+			span
+				display: block
+				font-weight: 700
+				margin-top: 20px
+				margin-bottom: 3px
+				font-size: 36px
+
+		li
+			position: relative
+			display: inline-block
+			vertical-align: middle
+			background: #262626
+			width: 370px
+			font-size: 12px
+			line-height: 14px
+			padding-left: 85px
+			padding-right: 85px
+			padding-top: 12px
+			height: 38px
+			opacity: .8
+			&.fixed
+				padding-top: 4px
+			&:nth-of-type(even)
+				background: #2b2b2b
+			&:before
+				position: absolute
+				display: block
+				content: ''
+				right: 48px
+				top: 8px
+				width: 21px
+				height: 21px
+				border: 1px solid #2c2c2d
+				background-color: #2b2b2b
+				border-radius: 50%
+			&:after
+				position: absolute
+				display: block
+				content: ''
+				right: 53px
+				top: 13px
+				@include sprite($li)
+	&__line
+		margin-bottom: 30px
+		&:last-of-type
+			margin-bottom: 0
+		&_bg
+			background-color: #222222
+			transition: .3s
+			&:hover
+				box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.36)
+				.services
+					&__button
+						opacity: 1
+			.services
+				&__item
+					box-shadow: none !important
+				
+	&__title
+		text-align: center
+	&__wrap
+		display: inline-block
+		vertical-align: top
+	&__button
+		opacity: 0
+		width: 107px
+		margin-top: 13px
+		line-height: 30px
+
+
+.reviews
+	padding-top: 45px
+	padding-bottom: 50px
+	&__title
+		margin-bottom: 24px
+	&__list
+		.slick-prev
+			left: -35px
+		.slick-next
+			right: -35px
+		
+	&__img
+		width: 270px
+		height: 400px
+		border: 3px solid #f5c12f
+		margin-left: auto
+		margin-right: auto
+		img
+			width: 100%
+			height: 100%
+	&__text
+		text-align: center
+		margin-top: 24px
+		font-size: 18px
+		font-weight: 700
+		max-width: 270px
+		margin-left: auto
+		margin-right: auto
+
+.opinions
+	padding-top: 45px
+	padding-bottom: 45px
+	&__list
+		width: 630px
+		margin-left: auto
+		margin-right: auto
+		.slick-arrow
+			top: 210px
+	&__item
+		padding-bottom: 10px
+	&__title
+		margin-bottom: 37px
+	&__img
+		img
+			margin-left: auto
+			margin-right: auto
+			border-radius: 50%
+	&__name
+		font-size: 14px
+		font-weight: 700
+		text-transform: uppercase
+		text-align: center
+		margin-top: 10px
+	&__position
+		color: #f5c12f
+		font-size: 10px
+		font-weight: 700
+		text-align: center
+		max-width: 140px
+		margin-left: auto
+		margin-right: auto
+	&__quote
+		position: relative
+		width: 370px
+		margin-left: auto
+		margin-right: auto
+		text-align: center
+		font-size: 11px
+		line-height: 15px
+		margin-top: 20px
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			left: -20px
+			top: -8px
+			@include sprite($quote-before)
+	&__subtitle
+		font-weight: 700
+	&__text
+		color: #959699
+		&:after
+			content: ''
+			position: relative
+			top: 8px
+			margin-left: 6px
+			display: inline-block
+			@include sprite($quote-after)
+		
+
+.questions
+	position: relative
+	color: #d2d2d2
+	background-color: #1f2022
+	padding-bottom: 54px
+	.container
+		position: relative
+	a
+		color: white
+	&__form
+		padding-top: 54px
+		width: 270px
+	&__head
+		font-size: 0
+		margin-bottom: 20px
+	&__icon, &__head-text
+		display: inline-block
+		vertical-align: top
+	&__head-text
+		width: 205px
+		padding-left: 10px
+		margin-top: -4px
+
+	&__title
+		font-size: 18px
+		font-weight: 700
+		text-transform: uppercase
+		padding-bottom: 5px
+		margin-bottom: 5px
+		border-bottom: 1px solid #d0d0ca
+	&__desc
+		font-size: 12px
+		font-weight: 700
+		color: #494a4b
+	&__input
+		margin-bottom: 12px
+	&__link
+		text-align: center
+		font-size: 12px
+		font-weight: 700
+		a
+			border-bottom: 1px solid white
+			&:hover
+				border-color: transparent
+	&__button
+		width: 116px
+		margin-top: 17px
+	&__hidden
+		display: none
+		position: absolute
+		width: 100%
+		bottom: -54px
+		background-color: rgba(48,52,59,.95)
+		text-align: center
+		color: #abadaf
+		font-size: 12px
+		padding: 27px
+		width: 270px
+		left: 15px
+	&__content
+		width: 900px
+		text-align: center
+		color: #d2d2d2
+		a
+			color: #d2d2d2
+	&__text
+		font-size: 24px
+		font-weight: 700
+		width: 635px
+		margin-left: auto
+		margin-right: auto
+		padding-top: 80px
+		span
+			display: block
+			margin-top: 25px
+			text-transform: uppercase
+		a
+			font-size: 42px
+			line-height: 42px
+			font-weight: 400
+
+
+.page
+	padding-top: 54px
+	padding-bottom: 54px
+
+
+
+
+.contacts
+	position: relative
+	&__map
+		width: 100%
+		height: 550px
+	&__wrap
+		position: absolute
+		right: 50%
+		margin-right: -500px
+		top: 75px
+		width: 370px
+		background-color: #222222
+		color: #c5c5c5
+		border-radius: 5px
+		padding: 45px 15px 42px 19px
+		a
+			color: #c5c5c5 
+	&__title
+		text-align: center
+		font-size: 24px
+		font-weight: 700
+		text-transform: uppercase
+		margin-bottom: 30px
+		color: #ffffff
+		
+	&__data
+		font-size: 12px
+		margin-bottom: 25px
+		p
+			margin-bottom: 18px
+			&:last-of-type
+				margin-bottom: 0
+		u
+			display: inline-block
+			width: 22px
+			margin-right: 4px
+			text-align: center
+		b
+			font-weight: normal
+	&__text
+		text-align: center
+		font-size: 18px
+		font-weight: 700
+		line-height: 30px
+
+.main
+	// min-height: 400px
+
+
+.slide
+	height: 516px
+	position: relative
+	&_edu-typical
+		&__wrap
+			padding-top: 150px
+		.slide
+			&__text
+				width: 830px
+				line-height: 30px
+				margin-left: auto
+				margin-right: auto
+	&__img
+		overflow: hidden
+		img
+			width: 1920px
+			margin-left: auto
+			margin-right: auto
+	&__wrap
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		color: #a29f9f
+		font-weight: 700
+		text-align: center
+		padding-top: 85px
+	&__title
+		font-size: 36px
+		text-transform: uppercase
+		color: white
+		margin-bottom: 10px
+	&__text
+		font-size: 20px
+		margin-bottom: 58px
+	&__desc
+		font-size: 14px
+		margin-bottom: 15px
+	&__button
+		width: 340px
+		line-height: 37px
+		color: #242630
+		margin-bottom: 27px
+		font-size: 14px
+	&__link
+		font-size: 16px
+		a
+			color: #f5c12f
+			border-color: #f5c12f
+
+
+
+
+.services-filter
+	margin-top: 54px
+	padding-bottom: 39px
+	&__nav
+		text-align: center
+		margin-bottom: 39px
+		li
+			color: #f5c12f
+			font-size: 14px
+			font-weight: 700
+			border: 1px solid #f5c12f
+			border-radius: 3px
+			text-transform: uppercase
+			padding: 8px 20px
+			cursor: pointer
+			&.selected
+				color: #242630
+				background-color: #f5c12f
+	&__list
+		margin-left: -15px
+		margin-right: -15px
+	&__item
+		display: none
+		position: relative
+		height: 301px
+		margin-left: 15px
+		margin-right: 15px
+		margin-bottom: 15px
+		border-radius: 5px
+		transition: .3s
+		&:hover
+			transform: scale(1.03)
+			box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.47)
+			.services-filter
+				&__button
+					opacity: 1
+		&_fixed
+			.services-filter
+				&__title
+					top: 33%
+				
+	&__img
+		position: relative
+		img
+			border-radius: 5px
+		&:before
+			display: block
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background: rgba(0,0,0,.8)
+			border-radius: 5px
+	&__title
+		z-index: 2
+		position: absolute
+		color: #ffffff
+		font-size: 30px
+		font-weight: 700
+		text-transform: uppercase
+		width: 100%
+		top: 40%
+		text-align: center
+	&__button
+		opacity: 0
+		position: absolute
+		bottom: 35px
+		right: 50%
+		margin-right: -67px
+		width: 135px
+		line-height: 37px
+		font-size: 14px
+
+
+
+
+
+
+
+.about
+	color: #959699
+	&__section
+		padding-top: 45px
+		padding-bottom: 45px
+		&_middle
+			padding-bottom: 2px
+		&_bottom
+			padding-bottom: 15px
+	&__title
+		margin-bottom: 24px
+		color: $color-1
+
+	&__text
+		max-width: 820px
+		margin-left: auto
+		margin-right: auto
+		font-weight: 700
+		line-height: 24px
+		text-align: center
+
+	&__imgs
+		width: 945px
+		margin-left: auto
+		margin-right: auto
+	&__img
+		width: 50%
+		font-size: 0
+		margin-bottom: 32px
+		&:nth-of-type(even)
+			padding-left: 110px
+		.icon
+			margin-right: 9px
+		p
+			display: inline-block
+			vertical-align: middle
+			font-size: 13px
+			font-weight: 700
+			line-height: 20px
+			width: calc(100% - 45px)
+			a
+				font-size: 16px
+				color: #f5c12f
+				border-color: #f5c12f
+				&:hover
+					border-color: transparent
+		span
+			position: relative
+			top: -2px
+	&__icons
+		width: 850px
+		margin-left: auto
+		margin-right: auto
+	&__icon
+		width: 50%
+		margin-bottom: 21px
+		.icon
+			margin-right: 15px
+			&-conveyor
+				vertical-align: top
+		p
+			display: inline-block
+			vertical-align: middle
+			font-size: 13px
+			font-weight: 700
+			width: calc(100% - 90px)
+
+
+.email
+	border-color: #6d6e6a
+	&:hover
+		border-color: transparent
+
+
+
+
+.format
+	padding-top: 44px
+	padding-bottom: 20px
+	&__title
+		margin-bottom: 25px
+	&__text
+		width: 645px
+		margin-left: auto
+		margin-right: auto
+		font-size: 14px
+		line-height: 24px
+		color: #959699
+		text-align: center
+		margin-bottom: 32px
+
+	&__list
+		width: 750px
+		margin-left: auto
+		margin-right: auto
+	&__item
+		width: 50%
+		font-size: 0
+		margin-bottom: 25px
+		height: 48px
+		&_fixed
+			padding-top: 10px
+		&:nth-of-type(even)
+			padding-left: 140px
+		u
+			display: inline-block
+			vertical-align: middle
+			margin-right: 14px
+			width: 43px
+		p
+			display: inline-block
+			vertical-align: middle
+			color: #959699
+			font-weight: 700
+			font-size: 13px
+			width: calc(100% - 65px)
+
+.programs
+	color: white
+	background-color: #000000
+	padding-top: 44px
+	padding-bottom: 4px
+	&__title
+		margin-bottom: 32px
+
+	&__item
+		background-color: #222222
+		width: 370px
+		height: 113px
+		position: relative
+		margin-right: 30px
+		margin-bottom: 50px
+		transition: .3s
+		outline: none
+		&:nth-of-type(3n)
+			margin-right: 0
+		&:hover
+			transform: scale(1.05)
+			box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.47)
+	&__count
+		width: 121px
+		height: 33px
+		line-height: 33px
+		text-align: center
+		background-color: #ffffff
+		font-size: 16px
+		font-weight: 700
+		color: #222222
+		border-radius: 4px
+		position: absolute
+		right: 24px
+		top: -16px
+	&__subtitle
+		font-size: 18px
+		font-weight: 700
+		color: #d1d1d1
+		text-align: center
+		display: table-cell
+		vertical-align: middle
+		width: 370px
+		height: 113px
+
+
+
+.advantages-icons
+	padding-top: 44px
+	padding-bottom: 30px
+	&__title
+		margin-bottom: 20px
+	&__list
+		width: 1135px
+		margin-left: auto
+		margin-right: auto
+	&__item
+		width: 33.3333%
+		margin-bottom: 28px
+		u
+			display: inline-block
+			width: 43px
+			vertical-align: middle
+			text-align: center
+			margin-right: 15px
+		p
+			display: inline-block
+			vertical-align: middle
+			font-size: 13px
+			font-weight: 700
+			color: #959699
+
+
+
+.form
+	background-color: #1f2022
+	padding-top: 45px
+	padding-bottom: 45px
+	&__title
+		color: white
+		margin-bottom: 18px
+	&__elements
+		width: 340px
+		margin-left: auto
+		margin-right: auto
+	&__input
+		margin-bottom: 12px
+	&__button
+		margin-top: 5px
+		width: 116px
+		margin-bottom: 15px
+	&__desc
+		color: #ffffff
+		opacity: 0.6
+		font-size: 12px
+		text-align: center
+
+
+
+
+
+.text
+	&_edu
+		text-align: center
+		font-size: 14px
+		font-weight: 700
+		line-height: 24px
+		color: #959699
+		width: 1030px
+		margin-left: auto
+		margin-right: auto
+
+
+
+
+
+
+
+
+
+
+
+.footer
+	padding-top: 57px
+	padding-bottom: 50px
+	&__col
+		&_middle
+			width: 586px
+		&_right
+			margin-left: 40px
+			width: 245px
+
+	&__nav
+		&_line
+			margin-top: 67px
+			ul
+				li
+					display: inline-block
+					text-transform: uppercase
+					margin-right: 80px
+					&:last-of-type
+						margin-right: 0
+					a
+						color: #1f2022
+						font-weight: 700
+						&:hover
+							border-color: #1f2022
+		&_right
+			margin-left: 95px
+		li
+			display: block
+			margin-bottom: 10px
+			a
+				color: #6d6e6a
+				&:hover
+					border-color: #6d6e6a
+			&:last-of-type
+				margin-bottom: 0
+	&__logo
+		margin-bottom: 12px
+	&__phone
+		margin-bottom: 15px
+	&__contacts
+		margin-right: 100px
+		width: 198px
+	&__title
+		font-size: 14px
+		font-weight: 700
+		text-transform: uppercase
+		margin-top: -5px
+		margin-bottom: 15px

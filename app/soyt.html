@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+
+	<!-- Meta -->
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="template/styles/css/style.css" />
+	<link rel="stylesheet" href="template/styles/css/responsive.css" />
+
+	<!-- Scripts -->
+	<script src="template/scripts/libs.js"></script>
+	<script src="template/scripts/common.js"></script>
+
+	<!--[if lt IE 9]>
+			<script>
+				document.createElement('header');
+				document.createElement('nav');
+				document.createElement('main');
+				document.createElement('section');
+				document.createElement('article');
+				document.createElement('aside');
+				document.createElement('footer');
+			</script>
+	<![endif]-->
+</head>
+<body>
+	<div class="popup" id="popup-callback">
+		<div class="popup__head">
+			<div class="popup__icon icon-black"><i class="icon icon-smartphone"></i></div>
+			<div class="popup__text">
+				<div class="popup__title">закажите звонок</div>
+				<div class="popup__desc">Закажите звонок и получите ответы на все вопросы</div>
+			</div>
+		</div>
+		<div class="popup__body">
+			<input type="text" class="popup__input input input_black" placeholder="Имя">
+			<input type="text" class="popup__input input input_black input_phone" placeholder="Телефон">
+			<button class="popup__button button button_yellow button_block button_35">заказать звонок</button>
+			<div class="popup__link"><a href="/policy/">Политика конфиденциальности</a></div>
+		</div>
+	</div>
+	<div class="popup popup_coures" id="popup-coures">
+		<div class="popup__title">закажите обучение по курсу</div>
+		<div class="popup__desc">Охрана труда, 40 часов</div>
+		<input type="text" class="popup__input input input_black" placeholder="Имя">
+		<input type="text" class="popup__input input input_black input_phone" placeholder="Телефон">
+		<input type="text" class="popup__input input input_black input_hidden">
+		<button class="popup__button button button_yellow button_block button_35">заказать</button>
+		<div class="popup__text">Наш специалист свяжется с Вами в течение 10 минут, чтобы согласовать условия и предоставить необходимую информацию по обучению.</div>
+	</div>
+	<header class="header">
+		<div class="container row">
+			<div class="header__logo col"><a href="/"><img src="upload/logo.png" alt=""></a></div>
+			<div class="header__address col"><div class="icon-white"><i class="icon icon-home"></i></div><p>г. Москва, ул.Пушкина д.1</p></div>
+			<div class="header__phones col"><div class="icon-white"><i class="icon icon-call"></i></div><p><a href="">+88015 1457 5879</a><a href="">+88015 1457 5879</a></p></div>
+			<a data-fancybox data-src="#popup-callback" href="javascript:;" class="header__button button button_yellow button_minni button_28 col">заказать звонок</a>
+		</div>
+	</header>
+	<nav class="nav">
+		<div class="nav__visible">
+			<div class="container">
+				<ul>
+					<li><a href="#">услуги</a></li>
+					<li><a href="">обучение</a></li>
+					<li><a href="">медицина</a></li>
+					<li><a href="">сертификация</a></li>
+					<li><a href="">партнеры</a></li>
+					<li><a href="">о компании</a></li>
+					<li><a href="">контакты</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="nav__hidden">
+			<div class="container clearfix">
+				<ul>
+					<li><a href="">СОУТ</a></li>
+					<li><a href="">ЧАССП	</a></li>
+					<li><a href="">Производственный контроль</a></li>
+				</ul>
+				<ul>
+					<li><a href="">Паспорт антитеррора</a></li>
+					<li><a href="">Аудит охраны труда</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<main class="main">
+		<div class="slide slide_edu-typical">
+			<div class="slide__img"><img src="upload/slides/instruments.png" alt=""></div>
+			<div class="slide__wrap">
+				<div class="container">
+					<div class="slide__title">ПРОФЕССИОНАЛЬНОЕ ОБУЧЕНИЕ ПО ОХРАНЕ ТРУДА</div>
+					<div class="slide__text">
+						<p>Для осуществления контроля соблюдений необходимых условий труда в любой организации, необходимо проведение обучения по курсу Охрана труда. Это является одним из основных мероприятий в сфере охраны труда в организации, поскольку отсутствие необходимых знаний в этой области, невозможно будет осуществление необходимого регулирования качественных взаимоотношений между сотрудниками и работодателем.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="format">
+			<div class="container">
+				<div class="format__title title">Формат обучения</div>
+				<div class="format__text">При прохождении обучения ваши сотрудники получат доступ к методическим материалам, которые помогут закрепить полученные знания и быстро найти необходимую информацию.</div>
+				<div class="format__list row">
+					<div class="format__item col">
+						<u><i class="icon icon-video-player"></i></u>
+						<p>Видео лекции ведущих специалистов <br />в области оценки условий труда</p>
+					</div>
+					<div class="format__item col">
+						<u><i class="icon icon-presentation"></i></u>
+						<p>Обучающие презентации</p>
+					</div>
+					<div class="format__item col">
+						<u><i class="icon icon-ebook"></i></u>
+						<p>Электронные учебники</p>
+					</div>
+					<div class="format__item col">
+						<u><i class="icon icon-inbox"></i></u>
+						<p>База нормативных <br />правовых актов</p>
+					</div>
+					<div class="format__item col">
+						<u><i class="icon icon-exam"></i></u>
+						<p>Практические задачи и примеры</p>
+					</div>
+					<div class="format__item format__item_fixed col">
+						<u><i class="icon icon-webinar"></i></u>
+						<p>Вебинары</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="programs">
+			<div class="container">
+				<div class="programs__title title">Мы предлагаем для вас следующие программы обучения по охране труда</div>
+				<div class="programs__list row">
+					<a data-fancybox data-src="#popup-coures" href="javascript:;" class="programs__item col">
+						<div class="programs__count">40 часов</div>
+						<div class="programs__subtitle">Охрана труда</div>
+					</a>
+					<a data-fancybox data-src="#popup-coures" href="javascript:;" class="programs__item col">
+						<div class="programs__count">72 часа</div>
+						<div class="programs__subtitle">Обучение экспертов <br />по СОУТ</div>
+					</a>
+					<a data-fancybox data-src="#popup-coures" href="javascript:;" class="programs__item col">
+						<div class="programs__count">16 часов</div>
+						<div class="programs__subtitle">Охрана труда в <br />жилищно-коммунальном <br />хозяйстве (ЖКХ)</div>
+					</a>
+					<a data-fancybox data-src="#popup-coures" href="javascript:;" class="programs__item col">
+						<div class="programs__count">72 часа</div>
+						<div class="programs__subtitle">Менеджмент в охране труда</div>
+					</a>
+					<a data-fancybox data-src="#popup-coures" href="javascript:;" class="programs__item col">
+						<div class="programs__count">72 часа</div>
+						<div class="programs__subtitle">Оценка и управление <br />профессиональными рисками</div>
+					</a>
+					<a data-fancybox data-src="#popup-coures" href="javascript:;" class="programs__item col">
+						<div class="programs__count">40 часов</div>
+						<div class="programs__subtitle">Охрана труда для членов <br />совместного комитета (комиссии) <br />aохране труда</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="advantages-icons">
+			<div class="container">
+				<div class="advantages-icons__title title">преимущества дистанционного обучения</div>
+				<div class="advantages-icons__list row">
+					<div class="advantages-icons__item col">
+						<u><i class="icon icon-earth"></i></u>
+						<p>Доступно во всех регионах России</p>
+					</div>
+					<div class="advantages-icons__item col">
+						<u><i class="icon icon-clock"></i></u>
+						<p>Обучение в любое удобное время</p>
+					</div>
+					<div class="advantages-icons__item col">
+						<u><i class="icon icon-manufacturer"></i></u>
+						<p>Обучение без отрыва от производства</p>
+					</div>
+					<div class="advantages-icons__item col">
+						<u><i class="icon icon-check"></i></u>
+						<p>Сокращение командировочных <br />расходов</p>
+					</div>
+					<div class="advantages-icons__item col">
+						<u><i class="icon icon-checklist"></i></u>
+						<p>Представление учебного <br />материала в удобном формате</p>
+					</div>
+					<div class="advantages-icons__item col">
+						<u><i class="icon icon-search"></i></u>
+						<p>Подготовка программ обучения, исходя <br />из специфики работы заказчика</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="form">
+			<div class="container">
+				<div class="form__title title">Закажите обучение и будьте уверены в высоком уровне профессионализма и компетенции ваших сотрудников.</div>
+				<div class="form__elements">
+					<input type="text" class="form__input input input_black" placeholder="Имя">
+					<input type="text" class="form__input input input_black" placeholder="Телефон">
+					<button class="form__button button button_yellow button_35">заказать</button>
+					<div class="form__desc">Наш специалист свяжется с Вами в течение 10 минут, чтобы согласовать условия и предоставить необходимую информацию по обучению.</div>
+				</div>
+			</div>
+		</div>
+		<div class="page border-bottom">
+			<div class="container">
+				<div class="text text_edu">
+					<p>Трудовой кодекс Российской федерации обязывает пройти обучение по охране труда не только сотрудников организации, но также и ее руководителя. Недопустимо, чтобы сотрудник организации выполнял свои обязанности без предварительного инструктажа по охране труда. В противном же случае, если работнику не был проведен соответствующий инструктаж, на работодателя, в соответствии с законодательством, может быть наложен штраф, от 15 000 до 30 000 рублей.</p>
+					<p>Любая организация, в штате которой находится более 50 человек, обязана иметь в своем штатном расписании такую единицу, как инженер по охране труда. В его компетенции проведение всех необходимых по закону мероприятий в сфере охраны труда в организации, и обеспечение безопасного труда сотрудников.</p>
+					<p>Наша компания предлагает всем организациям проведение необходимого обучения в сфере охраны труда для руководителей, сотрудников, а также инженеров по охране труда. Мы предлагаем как общие курсы, на которых слушатели получат минимальные необходимые знания, так и расширенные, специализированные курсы, по повышению квалификации.</p>
+					<p>Все курсы разработаны с учетом необходимых требований и нормативов закона. Все преподаватели имеют большой опыт как в преподаваемых областях, так и в подходах и методиках обучения. Специально для вас, мы предоставляем возможность проходить обучение как в очной форме, так и дистанционно, без отрыва от производства.</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container row">
+			<div class="footer__contacts col">
+				<div class="footer__logo"><img src="upload/logo.png" alt=""></div>
+				<div class="footer__phone">
+					<div class="icon-white"><i class="icon icon-home"></i></div>
+					<p>+88015 1457 5879</p>
+				</div>
+				<div class="footer__address">
+					<div class="icon-white"><i class="icon icon-call"></i></div>
+					<p>г. Москва, ул.Пушкина д.1</p>
+				</div>
+			</div>
+			<div class="footer__col footer__col_middle col">
+				<div class="row">
+					<div class="footer__nav col">
+						<div class="footer__title">услуги</div>
+						<ul>
+							<li><a href="">СОУП</a></li>
+							<li><a href="">ХАССП</a></li>
+							<li><a href="">Производственный контроль</a></li>
+							<li><a href="">Паспорт антитеррора</a></li>
+							<li><a href="">Аудит охраны труда</a></li>
+						</ul>
+					</div>
+					<div class="footer__nav footer__nav_right col">
+						<div class="footer__title">медицина</div>
+						<ul>
+							<li><a href="">Регистрация медицинских изделий (РУ)</a></li>
+							<li><a href="">Свидетельство о гос. регистрации (СГР)</a></li>
+							<li><a href="">Регистрация лекарственных средств (РЛС)</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__nav footer__nav_line">
+					<ul>
+						<li><a href="">обучение</a></li>
+						<li><a href="">партнеры</a></li>
+						<li><a href="">о компании</a></li>
+						<li><a href="">контакты</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__col footer__col_right col">
+				<div class="footer__nav">
+					<div class="footer__title">сертификация</div>
+					<ul>
+						<li><a href="">Сертификат соответствия ТР ТС</a></li>
+						<li><a href="">Декларация соответствия ТР ТС</a></li>
+						<li><a href="">Сертификат соответствия ГОСТ Р</a></li>
+						<li><a href="">Сертификат сейсмостойкости</a></li>
+						<li><a href="">Сертификат взрывозащиты</a></li>
+						<li><a href="">Пожарный сертификат</a></li>
+						<li><a href="">Сертификат происхождения товара</a></li>
+						<li><a href="">Отказное письмо</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

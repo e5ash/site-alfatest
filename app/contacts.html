@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+
+	<!-- Meta -->
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="template/styles/css/style.css" />
+	<link rel="stylesheet" href="template/styles/css/responsive.css" />
+
+	<!-- Scripts -->
+	<script src="template/scripts/libs.js"></script>
+	<script src="template/scripts/common.js"></script>
+
+	<!--[if lt IE 9]>
+			<script>
+				document.createElement('header');
+				document.createElement('nav');
+				document.createElement('main');
+				document.createElement('section');
+				document.createElement('article');
+				document.createElement('aside');
+				document.createElement('footer');
+			</script>
+	<![endif]-->
+</head>
+<body>
+	<div class="popup" id="popup-callback">
+		<div class="popup__head">
+			<div class="popup__icon icon-black"><i class="icon icon-smartphone"></i></div>
+			<div class="popup__text">
+				<div class="popup__title">закажите звонок</div>
+				<div class="popup__desc">Закажите звонок и получите ответы на все вопросы</div>
+			</div>
+		</div>
+		<div class="popup__body">
+			<input type="text" class="popup__input input input_black" placeholder="Имя">
+			<input type="text" class="popup__input input input_black input_phone" placeholder="Телефон">
+			<button class="popup__button button button_yellow button_block button_35">заказать звонок</button>
+			<div class="popup__link"><a href="/policy/">Политика конфиденциальности</a></div>
+		</div>
+	</div>
+	<header class="header">
+		<div class="container row">
+			<div class="header__logo col"><a href="/"><img src="upload/logo.png" alt=""></a></div>
+			<div class="header__address col"><div class="icon-white"><i class="icon icon-home"></i></div><p>г. Москва, ул.Пушкина д.1</p></div>
+			<div class="header__phones col"><div class="icon-white"><i class="icon icon-call"></i></div><p><a href="">+88015 1457 5879</a><a href="">+88015 1457 5879</a></p></div>
+			<a data-fancybox data-src="#popup-callback" href="javascript:;" class="header__button button button_yellow button_minni button_28 col">заказать звонок</a>
+		</div>
+	</header>
+	<nav class="nav">
+		<div class="nav__visible">
+			<div class="container">
+				<ul>
+					<li><a href="#">услуги</a></li>
+					<li><a href="">обучение</a></li>
+					<li><a href="">медицина</a></li>
+					<li><a href="">сертификация</a></li>
+					<li><a href="">партнеры</a></li>
+					<li><a href="">о компании</a></li>
+					<li><a href="">контакты</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="nav__hidden">
+			<div class="container clearfix">
+				<ul>
+					<li><a href="">СОУТ</a></li>
+					<li><a href="">ЧАССП	</a></li>
+					<li><a href="">Производственный контроль</a></li>
+				</ul>
+				<ul>
+					<li><a href="">Паспорт антитеррора</a></li>
+					<li><a href="">Аудит охраны труда</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<main class="main">
+		<div class="page border-bottom">
+			<div class="container">
+				<div class="contacts">
+					<div class="contacts__map" id="map">
+						<script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+						<script>
+							 var map;
+
+           			 DG.then(function () {
+                map = DG.map('map', {
+                    center: [44.999675981546005, 41.919171810150154],
+                    zoom: 16
+                });
+
+                DG.marker([44.999675981546005, 41.919171810150154]).addTo(map);
+            });
+						</script>
+					</div>
+					<div class="contacts__wrap">
+						<div class="contacts__title">контакты</div>
+						<div class="contacts__data">
+							<p><u><i class="icon icon-home-yellow"></i></u><b>г. Ставрополь,  ул. 50 лет ВЛКСМ, 109, оф. 300Б</b></p>
+							<p><u><i class="icon icon-phone-yellow"></i></u><b><a href="">8 (8652) 20-58-17</a>, <a href="">8 (8652) 677-535</a>, <a href="">8 (968) 267-75-35</a></b></p>
+							<p><u><i class="icon icon-site-yellow"></i></u><b><a href="" class="email">alfatest-s@bk.ru</a></b></p>
+							<p><u><i class="icon icon-mail-yellow"></i></u><b>355011 Ставрополь, ул. 50 лет ВЛКСМ, 109, оф. 300 Б</b></p>
+						</div>
+						<div class="contacts__text">
+							<p>График работы:</p>
+							<p class="c-yellow">Понедельник - Пятница</p>
+							<p class="c-yellow">с 9.00 до 19.00</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container row">
+			<div class="footer__contacts col">
+				<div class="footer__logo"><img src="upload/logo.png" alt=""></div>
+				<div class="footer__phone">
+					<div class="icon-white"><i class="icon icon-home"></i></div>
+					<p>+88015 1457 5879</p>
+				</div>
+				<div class="footer__address">
+					<div class="icon-white"><i class="icon icon-call"></i></div>
+					<p>г. Москва, ул.Пушкина д.1</p>
+				</div>
+			</div>
+			<div class="footer__col footer__col_middle col">
+				<div class="row">
+					<div class="footer__nav col">
+						<div class="footer__title">услуги</div>
+						<ul>
+							<li><a href="">СОУП</a></li>
+							<li><a href="">ХАССП</a></li>
+							<li><a href="">Производственный контроль</a></li>
+							<li><a href="">Паспорт антитеррора</a></li>
+							<li><a href="">Аудит охраны труда</a></li>
+						</ul>
+					</div>
+					<div class="footer__nav footer__nav_right col">
+						<div class="footer__title">медицина</div>
+						<ul>
+							<li><a href="">Регистрация медицинских изделий (РУ)</a></li>
+							<li><a href="">Свидетельство о гос. регистрации (СГР)</a></li>
+							<li><a href="">Регистрация лекарственных средств (РЛС)</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__nav footer__nav_line">
+					<ul>
+						<li><a href="">обучение</a></li>
+						<li><a href="">партнеры</a></li>
+						<li><a href="">о компании</a></li>
+						<li><a href="">контакты</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__col footer__col_right col">
+				<div class="footer__nav">
+					<div class="footer__title">сертификация</div>
+					<ul>
+						<li><a href="">Сертификат соответствия ТР ТС</a></li>
+						<li><a href="">Декларация соответствия ТР ТС</a></li>
+						<li><a href="">Сертификат соответствия ГОСТ Р</a></li>
+						<li><a href="">Сертификат сейсмостойкости</a></li>
+						<li><a href="">Сертификат взрывозащиты</a></li>
+						<li><a href="">Пожарный сертификат</a></li>
+						<li><a href="">Сертификат происхождения товара</a></li>
+						<li><a href="">Отказное письмо</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
