@@ -4,6 +4,8 @@
 @import url('../../libs/fancybox/dist/jquery.fancybox.css')
 @import url('../../libs/slick-carousel/slick/slick.css')
 @import url('../../libs/slick-carousel/slick/slick-theme.css')
+@import url('../../libs/jquery.form-styler/dist/jquery.formstyler.css')
+@import url('../../libs/jquery.form-styler/dist/jquery.formstyler.theme.css')
 
 
 
@@ -214,7 +216,32 @@ a
 .input, .textarea
 	transition: border-color .3s
 
-
+.select
+	width: 100%
+	.jq-selectbox
+		&__select
+			color: white
+			background: #2f3032
+			height: 46px
+			border: none !important
+			box-shadow: none
+			text-shadow: none
+			padding-top: 7px
+			font-weight: 700
+			padding-left: 22px
+		&__dropdown
+			li
+				display: block
+		&__trigger
+			border-left: none
+			&-arrow
+				width: 0
+				height: 0
+				right: 20px
+				top: 18px
+				border-style: solid
+				border-width: 10px 7.5px 0 7.5px
+				border-color: #818181 transparent transparent transparent !important
 
 
 /* Blocks align */ 
@@ -577,6 +604,8 @@ a
 .advantages
 	padding-top: 45px
 	padding-bottom: 40px
+	&_fixed
+		padding-top: 0
 	&_list
 		padding-bottom: 10px
 		.advantages
@@ -1169,6 +1198,23 @@ a
 			&__button
 				width: 246px
 
+	&_security
+		.slide
+			&__title
+				margin-bottom: 37px
+			&__button
+				width: 246px
+	&_small
+		height: 270px
+		overflow: hidden
+		.slide
+			&__wrap
+				padding-top: 49px
+			&__title
+				margin-bottom: 37px
+				margin-bottom: 80px
+			&__button
+				width: 246px
 	&__img
 		overflow: hidden
 		img
@@ -1811,9 +1857,194 @@ a
 		font-size: 12px
 		line-height: normal
 
+.security-form
+	background-color: #1f2022
+	padding-top: 54px
+	padding-bottom: 54px
+	color: #ffffff
+	&__wrap
+		width: 460px
+		margin-left: auto
+		margin-right: auto
+	&__icon
+		display: inline-block
+		vertical-align: top
+	&__head
+		margin-bottom: 18px
+		font-size: 0
+		&-text
+			display: inline-block
+			vertical-align: top
+			width: 385px
+			margin-left: 11px
+			margin-top: -4px
+	&__title
+		font-size: 18px
+		font-weight: 700
+		text-transform: uppercase
+		opacity: .8
+		padding-bottom: 4px
+		margin-bottom: 2px
+		border-bottom: 1px solid #d0d0ca
+	&__desc
+		opacity: .2
+		font-size: 12px
+		font-weight: 700
+	&__input
+		line-height: 46px
+		margin-bottom: 15px
+		font-size: 14px
+		padding-left: 22px
+		padding-right: 22px
+		&::placeholder
+			color: white
+	&__select
+		margin-bottom: 15px
+	&__button
+		line-height: 46px
+		font-size: 18px
 
 
+.icons
+	padding-top: 54px
+	padding-bottom: 45px
+	&__item
+		text-align: center
+		font-weight: 700
+	&__icon
+		line-height: 81px
+	&__count
+		margin-top: 7px
+		font-size: 36px
+		margin-bottom: -5px
+	&__text
+		font-size: 18px
 
+.plarn
+	padding-top: 65px
+	padding-bottom: 95px
+	&__img
+		width: 230px
+		margin-right: 70px
+	&__content
+		width: 690px
+	&__title
+		font-size: 18px
+		font-weight: 700
+		line-height: 24px
+		margin-top: 3px
+		width: 510px
+	&__text
+		font-size: 14px
+		line-height: 24px
+		font-weight: 700
+		color: #959699
+		margin-top: 20px
+	&-form
+		color: white
+		background-color: #1f2022
+		padding-top: 45px
+		padding-bottom: 90px
+		&__title
+			opacity: .8
+			margin-bottom: 37px
+		&__icons
+			width: 530px
+			margin-left: auto
+			margin-right: auto
+			
+		&__icon
+			text-align: center
+			text-transform: uppercase
+			font-size: 12px
+			u
+				display: block
+				line-height: 48px
+			p
+				font-size: 12px
+				font-weight: 700
+				line-height: 20px
+				margin-top: 14px
+		&__wrap
+			width: 400px
+			margin-left: auto
+			margin-right: auto
+			margin-top: 80px
+		&__subtitle
+			font-size: 18px
+			opacity: .8
+			font-weight: 700
+			text-align: center
+			padding-left: 20px
+			padding-right: 20px
+			margin-bottom: 5px
+		&__desc
+			opacity: 0.6
+			font-size: 14px
+			line-height: 24px
+			text-align: center
+			margin-bottom: 16px
+		&__input
+			margin-bottom: 12px
+		.policy
+			font-size: 12px
+			line-height: normal
+			margin-top: 4px
+
+			
+.services-security
+	padding-top: 20px
+	&__title
+		margin-bottom: 40px
+	&__list
+		margin-left: -16px
+		margin-right: -16px
+	&__item
+		position: relative
+		width: 570px
+		margin-left: 15px
+		margin-right: 15px
+		margin-bottom: 45px
+		&:hover
+			.services-security
+				&__button
+					opacity: 1
+	&__img
+		position: relative
+		width: 570px
+		height: 301px
+		border-radius: 5px
+		&:before
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			content: ''
+			background: rgba(0,0,0,.8)
+			border-radius: 5px
+	&__wrap
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+	&__subtitle
+		font-size: 30px
+		font-weight: 700
+		line-height: 37px
+		color: #fefeff
+		padding: 35px 12px 0 55px
+		text-transform: uppercase
+	&__button
+		opacity: 0
+		position: absolute
+		bottom: 27px
+		left: 50%
+		margin-left: -67px
+		width: 135px
+		line-height: 37px
+		font-size: 14px
 
 
 .footer

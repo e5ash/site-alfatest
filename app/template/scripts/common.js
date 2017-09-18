@@ -32,6 +32,10 @@ $(document).ready(function($) {
 		slidesToShow: 2
 	});
 
+
+	$('select').styler();
+
+
 	var popupCouresDesc = $('#popup-coures .popup__desc'),
 		popupCouresInput = $('#popup-coures .input_hidden');
 	$('.programs__item').click(function(event) {
